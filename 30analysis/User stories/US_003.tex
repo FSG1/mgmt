@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{booktabs}
+
+\newcommand\addrow[2]{#1 &#2\\ }
+
+\newcommand\addheading[2]{#1 &#2\\ \hline}
+\newcommand\tabularhead{\begin{tabular}{lp{8cm}}
+		\hline
+	}
+	
+	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+		&\begin{minipage}[t][][t]{8cm}
+			\begin{enumerate} #2   \end{enumerate}
+		\end{minipage}\\ }
+	
+	\newenvironment{usecase}{\tabularhead}
+	{\hline\end{tabular}}
+\begin{document}
+	\begin{usecase}
+		\addrow{Name}{Updating the curriculum}
+		\hline
+		\addrow{ID}{US\_003}
+		\hline
+ 		\addmulrow{Actors}{	\item Curriculum owner 
+							\item Exam Commission}
+		\hline		
+		\addrow{Story}{the curriculum owner changes the curriculum and publishes it.}
+								
+
+	\end{usecase}
+	
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{booktabs}
+
+\newcommand\addrow[2]{#1 &#2\\ }
+
+\newcommand\addheading[2]{#1 &#2\\ \hline}
+\newcommand\tabularhead{\begin{tabular}{lp{8cm}}
+		\hline
+	}
+	
+	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+		&\begin{minipage}[t][][t]{8cm}
+			\begin{enumerate} #2   \end{enumerate}
+		\end{minipage}\\ }
+	
+	\newenvironment{usecase}{\tabularhead}
+	{\hline\end{tabular}}
+\begin{document}
+	\begin{usecase}
+		\addrow{Name}{Creating a module}
+		\hline
+		\addrow{ID}{US\_001}
+		\hline
+ 		\addmulrow{Actors}{	\item Teacher 
+							\item Department head 
+							\item Students
+							\item Exam Commission}
+		\hline		
+		\addrow{Story}{A teacher modifies a module description, talks with the department head and if agreed upon he publishes the document.}
+								
+
+	\end{usecase}
+	
+\end{document}
