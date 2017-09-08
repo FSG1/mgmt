@@ -1,0 +1,70 @@
+\chapter{Overall Description}
+This chapter will describe the general factors that will influence the product and its requirements.
+
+\section{Product Perspective}
+The product will be a software system that interacts with a database and a frontend to deliver and receive data.
+
+\todo[inline]{Input some general diagram or description of the system's architecture}
+
+\todo[inline]{Describe interfaces}
+
+\section{Product Functions}
+The general major functions of this system will be
+\begin{itemize}
+	\item CRUD operations on module data
+	\item Generating and releasing module descriptions and the \acrshort{OER}
+	\item Logging changes
+\end{itemize}
+
+\section{Users}
+The users of the system will be 
+\begin{itemize}
+	\item Teachers
+	\item Department Heads
+	\item Curriculum Owner
+\end{itemize}
+
+\newpage
+\section{External Interfaces}
+Any external software interfaces are listed here
+
+\begin{table}[h!]
+	\centering
+	\caption{User Interaction Interface}
+	\label{ui_interface_table}
+	\begin{tabularx}{\textwidth}{l l}
+		\hline
+		\textbf{Description}           & User interface                                  \\ \hline
+		\textbf{Purpose}               & Display data to the user and allow modification \\ \hline
+		\textbf{Source of input}       & User interaction                                \\ \hline
+		\textbf{Destination of output} & Backend system                                  \\ \hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\caption{Database Interface}
+	\label{db_interface_table}
+	\begin{tabularx}{\textwidth}{l l}
+		\hline
+		\textbf{Description}           & Database connection to a PostgreSQL database                           \\ \hline
+		\textbf{Purpose}               & Store and retrieve data from and to the system \\ \hline
+		\textbf{Source of input}       & Backend system                                 \\ \hline
+		\textbf{Destination of output} & Backend system                                 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\caption{PDF Generator Interface}
+	\label{pdf_interface_table}
+	\begin{tabularx}{\textwidth}{l l}
+		\hline
+		\textbf{Description}           & PDF Generator       \\ \hline
+		\textbf{Purpose}               & Generate a PDF file \\ \hline
+		\textbf{Source of input}       & Backend system      \\ \hline
+		\textbf{Destination of output} & Backend system      \\ \hline
+	\end{tabularx}
+\end{table}
+
+
