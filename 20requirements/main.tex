@@ -1,0 +1,70 @@
+\documentclass{report}
+
+%Customize page styling
+\usepackage{fancyhdr}
+
+%Be able to create glossaries and acronyms
+\usepackage[acronym, nonumberlist]{glossaries}
+\loadglsentries{acronyms}
+%\loadglsentries{glossary}
+\makeglossary
+
+%Stretch page to A4 format
+\usepackage{geometry}
+\geometry{
+	a4paper}
+
+%Use for images and tables
+\usepackage{float}
+\usepackage{tabularx}
+
+%Todo notes
+\usepackage[colorinlistoftodos,prependcaption,textsize=large]{todonotes}
+
+%Links and Refs
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linktoc=all,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\setcounter{tocdepth}{5}
+
+\begin{document}
+	
+	\author{Loek Ehren, Nils Nieuwenhuis, Tobias Derksen, Sjoerd Brauer}
+	\title{"Fontys Module Management System" Software Requirements Specification}
+	\date{Fontys Hogeschool Techniek en Logistiek, \today}
+	
+	\maketitle
+	
+	\thispagestyle{empty}
+	
+	\newpage
+	
+	%Pre introduction page styling
+	\pagenumbering{roman}
+	\setcounter{page}2
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	%\printglossary[title=Glossary]
+	\printglossary[type=\acronymtype,title=List of Abbreviations]
+
+	%Normal page styling
+	\pagenumbering{arabic}
+	
+	\lhead{\nouppercase{\leftmark}}
+	
+	\include{introduction}
+	
+	\include{description}
+	
+	\include{requirements}
+	
+\end{document}
