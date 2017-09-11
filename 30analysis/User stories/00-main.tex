@@ -1,0 +1,86 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\newcommand\addrow[2]{#1 &#2\\ }
+
+
+\newcommand\tabularhead{\begin{tabular}{lp{8cm}}
+		\hline
+	}
+	
+	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+		&\begin{minipage}[t][][t]{8cm}
+			\begin{enumerate} #2   \end{enumerate}
+		\end{minipage}\\ }
+	
+	\newenvironment{usecase}{\tabularhead}
+	{\hline\end{tabular}}
+
+
+\author{Sjoerd Brauer}
+\title{\textbf{User stories}}
+\date{11-9-2017}
+
+
+
+\begin{document}
+    \maketitle
+    \input{US_001}
+    ~\\
+    
+    \input{US_002}
+    ~\\
+    
+    \input{US_003}
+    ~\\
+    
+    \input{US_004}
+    
+    \newpage
+    
+    \input{US_005}
+    
+    ~\\
+    
+    \input{US_006}
+    
+    ~\\
+    
+    \input{US_007}
+    
+    ~\\
+    
+    \input{US_008}
+    
+    ~\\
+    
+    \input{US_009}
+
+    \newpage
+    
+    \input{US_010}
+    
+    ~\\
+    
+    \input{US_011}
+    
+    ~\\
+    
+    \input{US_012}
+    
+    ~\\
+    
+    \input{US_013}
+    
+    ~\\
+    
+    \input{US_014}
+\end{document}

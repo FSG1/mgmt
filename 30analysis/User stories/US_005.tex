@@ -1,22 +1,4 @@
-\documentclass{article}
-\usepackage{booktabs}
-
-\newcommand\addrow[2]{#1 &#2\\ }
-
-\newcommand\addheading[2]{#1 &#2\\ \hline}
-\newcommand\tabularhead{\begin{tabular}{lp{8cm}}
-		\hline
-	}
-	
-	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
-		&\begin{minipage}[t][][t]{8cm}
-			\begin{enumerate} #2   \end{enumerate}
-		\end{minipage}\\ }
-	
-	\newenvironment{usecase}{\tabularhead}
-	{\hline\end{tabular}}
-\begin{document}
-	\begin{usecase}
+\begin{usecase}
 		\addrow{Name}{Making module public}
 		\hline
 		\addrow{ID}{US\_005}
@@ -24,8 +6,4 @@
  		\addrow{Actors}{Teacher  }
 		\hline		
 		\addrow{Story}{A teacher makes a modified module description public.}
-								
-
-	\end{usecase}
-	
-\end{document}
+\end{usecase}
