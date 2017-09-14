@@ -1,0 +1,28 @@
+% !TeX spellcheck = en_US
+\section{Overview}
+\label{sec:intro}
+
+This document lays out the structure and design decisions of the FMMS database.
+The database is designed to store information about study programs such as Informatics at FH TenL Venlo.
+The concrete database content is treated as sensible data and not discussed here.
+~\\
+PostgreSQL is used as database server and to make use of some features the database is divided into three different schemas. The purpose of the schemas is explained in the following subsections.
+
+
+\subsection{Study Schema}
+The most important schema is the \glqq study\grqq{} schema. It contains all tables which store the data about the studies. The data is stored in a highly normalized data structure which allows to easily make sure the database is in a consistent state and enables to enforce some strict constraints.
+
+
+\subsection{Descriptions Schema}
+The descriptions schema contains information about published module description.
+When a module description is published, all information which is needed to generate the module description will be copied from the study schema to the description schema.
+This makes it easy to keep track of changes over time and allows user to get older versions of module descriptions.
+~\\
+The table structure of this schema is - in contrast to the study schema - optimized to store data so the module description can be generated as easy as possible. This includes some denormalization and data duplication.
+Nevertheless, it is forbidden so make any changes to the data in this schema, only insertion will be allowed, so there is no need to enforce complex constraints or keep track of data consistency.
+
+
+\subsection{Users Schema}
+The users schema contains all data which is needed to run the application. This includes user data as well as configuration and access control information.
+~\\
+This schema will be extended during development to add more features to the application.
