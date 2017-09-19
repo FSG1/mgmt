@@ -1,3 +1,23 @@
 
-		\textbf{playframework} \\
+\textbf{playframework} \\
 Java Database Connectivity (JDBC) is an application program interface (API) specification for connecting programs written in Java to the data in popular databases.
+
+Supports all criteria?
+\textbf{yes}
+
+\begin{enumerate}
+	\item Reactive. Play is built on Netty, so it supports non-blocking I/O. This means it's very easy and inexpensive to make remote calls in parallel, which is important for high performance apps in a service oriented architecture. It also makes it possible to use server push technologies such as Comet and WebSockets. More info here: Play Framework: async I/O without the thread pool and callback hell 
+	\item Amazing error handling. Play has beautiful error handling in dev mode: for both compile and runtime errors, it shows the error message, the file path, line number, and relevant code snippet right in the browser. No more digging through random log files (Tomcat) and far fewer incomprehensible, gigantic stacktraces (Spring).
+	\item Java (and Scala). Use reliable, type-safe languages and leverage JVM performance to scale to many users and many developers. Also, you can leverage the huge Java community, strong IDE/tooling support, and tons of open source libraries.
+	\item 
+\end{enumerate}
+Cons:
+\begin{enumerate}
+	\item not well known.
+	\item Java + Async. Play is built around async I/O, which means writing code that "executes later". Unlike Scala, Java lacks key language features, such as closures, to keep async code clean. There are patterns and tools that make it tolerable, but you end up with lots of anonymous inner classes. For streaming functionality (iteratees, enumeratees), you can't really use Java at all. Also worth mentioning is that lots of existing Java libraries are synchronous/blocking, so you have to be careful with which ones you use in a an async/non-blocking environment like Netty. However, if necessary, you can always configure Play's thread pool to use lots of threads and behave just like any other blocking server.
+	\item Memory Hog
+\end{enumerate}
+
+\textbf{sources}
+https://www.playframework.com/
+https://www.quora.com/What-are-the-pros-and-cons-of-the-Play-Framework-2-for-a-Java-developer
