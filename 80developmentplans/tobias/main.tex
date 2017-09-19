@@ -43,9 +43,9 @@
 
 % Generiert PDF Informationen
 \hypersetup{pdfinfo={
-		Title={\BoldTitle},
-		Author={SoFa Group 1},
-		Subject={\Subtitle}
+	Title={\BoldTitle},
+	Author={\Authors},
+	Subject={\Subtitle}
 }}
 
 
@@ -55,8 +55,6 @@
 
 \setcounter{page}{2}
 
-\tableofcontents
-
 \clearpage
 \section{Introduction}
 \label{sec:intro}
@@ -64,9 +62,18 @@
 TODO
 
 
+\input{current}
+% current skills level
 
+\input{target}
+% target skill level
 
-\clearpage
-\input{appendix/appendix}
+\input{development}
+% development plan
+
+\input{research}
+% research topic
+
+% Evaluation
 
 \end{document}
