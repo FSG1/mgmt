@@ -1,0 +1,85 @@
+\documentclass[a4paper,oneside,titlepage]{article}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage[bottom]{footmisc}
+%\usepackage{a4wide}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+%\usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
+\usepackage[pdftex,scale={.8,.8}]{geometry}
+\usepackage{layout}
+\usepackage[doublespacing]{setspace}
+\usepackage[pdftex,colorlinks=false,hidelinks,pdfstartview=FitV]{hyperref}
+
+\usepackage{%
+	array,
+	booktabs,
+	dcolumn,
+	rotating,
+	shortvrb,
+	url,
+	longtable,
+	lscape,
+	tabularx
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5\baselineskip}
+
+\usepackage{metainfo}
+\usepackage[pagestyles,raggedright]{titlesec}
+\usepackage{xcolor,colortbl}
+
+\input{metadata}
+
+% Generiert Deckblatt automatisch
+\AtBeginDocument{
+	\maketitle
+	\thispagestyle{empty}
+}
+
+% Generiert PDF Informationen
+\hypersetup{pdfinfo={
+	Title={\BoldTitle},
+	Author={\Authors},
+	Subject={\Subtitle}
+}}
+
+
+\begin{document}
+
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+
+\setcounter{page}{2}
+
+\clearpage
+
+\input{intro}
+% Introduction
+
+
+\input{current}
+% current skills level
+
+
+\input{target}
+% target skill level
+
+
+\input{development}
+% development plan
+
+
+\input{research}
+% research topic
+
+
+% Evaluation
+
+\end{document}
