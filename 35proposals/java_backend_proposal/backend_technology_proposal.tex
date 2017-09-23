@@ -1,0 +1,66 @@
+
+                %% Base on http://tex.stackexchange.com/questions/150900/latex-coding-for-statement-of-purpose
+
+\documentclass{article}
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=4pt, % separation between header rule and text
+]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola}
+\usepackage{lastpage}
+\usepackage[natbibapa]{apacite}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  \textcolor{blue}{\youremail}}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+\newcommand{\soptitle}{Java backend framework proposal.}
+
+\newcommand{\yourname}{Sjoerd Brauer}
+\newcommand{\youremail}{s.brauer@student.fontys.nl}
+
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{blue}{\textbf{#1:}}\space
+}
+
+\usepackage[
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+	\large of \yourname\ 
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+
+\statement{Jersey} \\
+Jersey is proposed as RESTful framework for several reasons. Jersey uses JAX-RS, JAX-RS is an API used by multiple frameworks. If you know how to use it once, you will know to use other frameworks implementing JAX-RS too. Jersey can be deployed to any Java application server. Jersey gets alot of positive attention if you look around as well, this is a major factor why Jersey is recommended. Jersey is a very fast framework.
+
+\bigskip
+\statement{JDBC} \\
+JDBC is proposed because it's expected that there will be complex queries. From research it is found that Hibernate has troubles with complex queries and is abit slower than JDBC. It's reasonably easy to write your own ORM where needed. For the parts that a ORM is needed one can be written.
+
+\bigskip
+\statement{Sources} \\
+Please see the Java back\-end research document for all the  sources used.
+
+\end{document}
+
