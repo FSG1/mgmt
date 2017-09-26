@@ -1,9 +1,9 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1503" measuredH="498" mockupW="971" mockupH="289">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1503" measuredH="441" mockupW="971" mockupH="232">
   <controls>
     <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="532" y="209" w="971" h="85" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
     <control controlID="12" controlTypeID="com.balsamiq.mockups::TextArea" x="545" y="217" w="96" h="69" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>2848996</color>
+        <color>16777215</color>
         <text>BUMA%0AX%20Credits</text>
       </controlProperties>
     </control>
@@ -13,7 +13,7 @@
         <text>Other%20courses....</text>
       </controlProperties>
     </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::Tooltip" x="1152" y="369" w="196" h="129" measuredW="193" measuredH="128" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Tooltip" x="571" y="312" w="196" h="129" measuredW="193" measuredH="0" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>filtered%20on%20semester%20curriculum%20and%20qualification</text>
       </controlProperties>

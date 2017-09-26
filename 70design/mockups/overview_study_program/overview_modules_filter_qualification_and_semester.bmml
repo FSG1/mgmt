@@ -2,13 +2,13 @@
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="490" y="240" w="93" h="68" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>16750848</color>
+        <color>16777215</color>
         <text>DBS%0A4%20Credits</text>
       </controlProperties>
     </control>
     <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="490" y="323" w="96" h="69" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>2848996</color>
+        <color>16777215</color>
         <text>BUA%0Ax%20Credits</text>
       </controlProperties>
     </control>
@@ -18,9 +18,9 @@
         <text>Other%20courses....</text>
       </controlProperties>
     </control>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="370" y="308" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="346" y="308" w="-1" h="-1" measuredW="76" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Modules</text>
+        <text>Semester%20x</text>
       </controlProperties>
     </control>
     <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="437" y="264" w="-1" h="-1" measuredW="22" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
