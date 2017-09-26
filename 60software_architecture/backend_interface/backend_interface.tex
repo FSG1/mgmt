@@ -25,18 +25,75 @@
 	This document outlines the specifications of the back-end application. The back-end application has a RESTful interface with which the front-end communicates with. \\ \\
 	The data format used will be JSON. \\
 	
-	
-	
-
-	
-	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=My table,boxrule=0.5pt]
-		Group & One     & Two     & Three    & Four     & Sum      \\\hline\hline
-		Red   & 1000.00 & 2000.00 &  3000.00 &  4000.00 & 10000.00 \\
-		Green & 2000.00 & 3000.00 &  4000.00 &  5000.00 & 14000.00 \\
-		Blue  & 3000.00 & 4000.00 &  5000.00 &  6000.00 & 18000.00 \\\hline\hline
-		Sum   & 6000.00 & 9000.00 & 12000.00 & 15000.00 & 42000.00
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=Complete overview of back-end endpoints. P stands for parameter,boxrule=0.5pt]
+		Uri path without source  & Description    \\\hline\hline
+		sp/p/curricula  & a list of curricula  \\\hline
+		sp/p/qualification & a list of qualifications \\\hline
+		semester/p/modules  & a list of modules  \\\hline
+		semester/p/qualifications   & a list of qualifications \\\hline
+		curriculum/p/semesters  & a list of semesters  \\\hline
+		module/p/lg  & a list of learning goals 
 	\end{tcolorbox}
 	
+	\section{Bookmarks}
 	
+	This section describes the urls more specifically with functionality and HTTP codes. \\\\
 	
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=curricula of student program,boxrule=1pt]
+		URL & \{source\}/sp/:id/curricula    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=qualifications of student program,boxrule=1pt]
+		URL & \{source\}sp/p/qualification    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=modules of a semester,boxrule=1pt]
+		URL & \{source\}semester/p/modules    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=qualifications after semester,boxrule=1pt]
+		URL & \{source\}semester/p/qualifications    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=semesters of curriculum,boxrule=1pt]
+		URL & \{source\}curriculum/p/semesters    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=learning goals of a module,boxrule=1pt]
+		URL & \{source\}module/p/lg    \\\hline
+		Method   & GET \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  \\ & 204: Geen inhoud
+	\end{tcolorbox}
+
+
+
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
