@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1864" measuredH="1165" mockupW="1456" mockupH="996">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1656" measuredH="1165" mockupW="1248" mockupH="996">
   <controls>
     <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="169" w="305" h="58" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -215,7 +215,7 @@
         <text>When%20clicked%20will%20reference%20to%20learning%20goal%20matrix%20view%20with%20assesment%20information</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Tooltip" x="1526" y="195" w="338" h="208" measuredW="336" measuredH="0" zOrder="39" locked="false" isInGroup="-1">
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Tooltip" x="1318" y="242" w="338" h="208" measuredW="336" measuredH="0" zOrder="39" locked="false" isInGroup="-1">
       <controlProperties>
         <text>The%20module%20description%20view%20actually%20consists%20out%20of%20multiple%20smaller%20views%20put%20together</text>
       </controlProperties>
