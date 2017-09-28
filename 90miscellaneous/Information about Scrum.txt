@@ -1,0 +1,55 @@
+planning
+- clear all questions
+- for each story there should be clear what the outcome is
+- go through all topics and discuss it, what should the (business) result be
+- Mockups included in user stories / product backlog
+- Maybe TestCase when is the user story finished. For example: log in with username and password and see profile page
+
+- Planning: numbers should be relative numbers
+-- do not use all cars, only small parts
+-- Add reason to user story, get a deep meaning how it contributes to the business
+
+- Estimate User Stories
+-- Ready to estimate -> take your cards
+-- Very first estimation: take an easy one (agreed upon by all)
+-- If someone is higher or lower than others, discuss it openly
+-- NOT DOING AVERAGE
+-- Keep it simple
+
+daily
+- update everybody
+- technical details will be discusses afterwards
+- scrum master responsible to stick to overview
+
+review
+- together with customer
+- demonstration meeting
+- make live demo
+- demonstrate test case
+- customer can accept or reject feature -> reject with reason
+
+retrospective
+- most important thing
+- what went good, what went wrong, what should we do better
+- scrum retrospective game?
+- outcome: define some actions -> who will do what and until when
+
+
+master
+- moderates the meeting
+- setup agenda for meetings
+- count story which the product owner has accepted
+
+product owner
+- responsible for product
+- respnsible for business features
+- leads through the meetings
+
+
+product backlog
+- list of features
+- can be chnaged on any time
+- should be owned by us and work together with HVD
+- prioritzed list -> needs agreement by product owner / customer
+
+- Create stories for management tasks -> setup projects, database, pipelines
