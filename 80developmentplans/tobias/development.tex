@@ -7,81 +7,67 @@ This section describes how I want to reach the targeted skill levels and how I w
 The definition of each level and an example as stated in the HBO-I domain description is included in each sub section.
 
 
-\subsection{Manage Infrastructure Level 3}
-
-Managing infrastructure on level 3 will be accomplished by setting up a running prototype of our application using different servers.
-Furthermore, as the DevOps Engineer, I need to set up a deployment pipeline to a certain server which deploys the application regularly and automatically. This requires an infrastructure of different server and services.
-
-\begin{quote}
-	\textbf{Infrastructure / Manage / Level 3}: \\
-	\textit{
-		Horizontal synchronization of ICT management (suppliers, third-party) and vertical synchronization.
-		Set up and implement a cloud-based public or private infrastructure.
-	} \\ (HBO-I Domain Description, p22)
-\end{quote}
-
-
 \subsection{Analyse Infrastructure Level 3}
-\label{analyzeinfra3}
+\label{ai3}
 
-Analyzing infrastructure on level 3 will be accomplished by researching on a proper infrastructure and technology for automated tests, continuous integration, and continuous delivery. During this research, the current technology trends will be taken into account for example cloud computing, infrastructure as a service and containerization.
+Analyzing infrastructure on level 3 will be achieved by defining requirements for a continuous integration and deployment infrastructure. This requirement should reflect the customer's needs regarding deployment but should also include test automation for all layers of our software architecture. 
 
+\paragraph{Satisfaction criteria:} The requirements should meet the needs of the customer and the group. Therefore the requirements will be discussed with the group and the customer. The discussion will be written down in a minute to track the remarks. In the end the customer and the group should agree to all requirements.
+
+\begin{minipage}{\textwidth}
 \begin{quote}
 	\textbf{Infrastructure / Analyse / Level 3}: \\
-	\textit{
-		Conduct trend research in the field of ICT infrastructure, based on (international) technological, economic en social developments and innovations. 
-		Execute a company infrastructure requirements analysis in order to identify functional and non-functional requirements.
-	} \\ (HBO-I Domain Description, p22)
+	Conduct trend research in the field of ICT infrastructure, based on (international) technological, economic en social developments and innovations. 
+	Execute a company infrastructure requirements analysis in order to identify functional and non-functional requirements.
+	\\ \textit{(HBO-I Domain Description, p22)}
 \end{quote}
+\end{minipage}
 
+\subsection{Implement Infrastructure Level 3}
 
-\subsection{Manage Software Level 3}
+To achieve implementing infrastructure level 3 I will implement the continuous integration and deployment infrastructure which I got as a result during my research (see Section \ref{sec:research}).
+The research will include a concrete proposal which will be adopted and implemented for our project.
 
-Managing software on level 3 will be accomplished by setting up a delivery plan how releases will be carried out to the customer. Furthermore the use of scrum will ensure a proper change management: Before each sprint, the implemented product functions needs to be well defined and cannot be changed. Changes to functions or new functions can only be implemented in an upcoming sprint.
+\paragraph{Satisfaction criteria:} The infrastructure is satisfying if it contributes to our project by improving the development process or decreasing time spent with testing and deployment. This will be assessed by the other group members. The feedback of the customer will be taken into account.
 
+\begin{minipage}{\textwidth}
 \begin{quote}
-	\textbf{Software / Manage / Level 3}: \\
-	\textit{Implement configuration, change and release management.} \\
-	(HBO-I Domain Description, p24)
+	\textbf{Infrastructure / Analyse / Level 3}: \\
+	Implement public or private cloud-based infrastructure and services, in compliance with all requirements. 
+	Set up an integrated multilevel ICT environment in order to implement central monitoring of the quality and security of ICT services.
+	\\ \textit{(HBO-I Domain Description, p23)}
 \end{quote}
-
-
-\subsection{Design Software Level 3}
-
-Designing software on level 3 will be accomplished by creating a test strategy for the application and setup an automatic test environment. 
-
-\begin{quote}
-	\textbf{Software / Manage / Level 3}: \\
-	\textit{
-		Set up a software architecture for a software system, consisting of both existing and new systems, taking into account both quality aspects and stakeholders. 
-		Draw up a test strategy for system tests.
-	} \\ (HBO-I Domain Description, p25)
-\end{quote}
+\end{minipage}
 
 
 \subsection{Implement Software Level 3}
 
-Implementation of software on level 3 will be accomplished by implementing the product functions using different kinds of technology and frameworks. These technologies and frameworks has to be chosen carefully, taking customer needs and existing architecture parts into account.
-While implementing the application, unit tests will be written and automatically tested using a continuous integration approach. As the DevOps Engineer, it is my job to setup such an approach and supervise this process.
+Implementing software on level 3 will be achieved by creating unit tests for the database layer.
+Normally during development, all parts of code will be tested using automated unit tests and the test coverage is considered as a quality metric. 
+Regardless of all this testing, the database and the logic and constraints on database layer are usually not tested at all.
+Only when it comes to integration or acceptance tests, a database will be used and hopefully it works.
 
+For our project I want to implement a unit tests for database constraints similar to the tests for the backend and the frontend. The tests should be run automatically and will be included into the continuous integration infrastructure.
+
+Because performing database tests is not famous, there is a lack of test frameworks and best practices. Therefore I need to find a proper framework or write a new one by incorporating different sources of information.
+
+\paragraph{Satisfaction criteria:} The database unit tests should cover at least 80\% of all database constraints as defined in the database documentation. Constraints also includes foreign keys or "not null" values.
+
+\begin{minipage}{\textwidth}
 \begin{quote}
 	\textbf{Software / Manage / Level 3}: \\
-	\textit{
-		Build and make available a software system in line with existing systems and on the basis of the designed architecture, using existing frameworks.
-		Using test automation when performing tests.
-	} \\ (HBO-I Domain Description, p25)
+	Build and make available a software system in line with existing systems and on the basis of the designed architecture, using existing frameworks.
+	Using test automation when performing tests.
+	\\ \textit{(HBO-I Domain Description, p25)}
 \end{quote}
+\end{minipage}
+
 
 
 \subsection{Professional Behavior Level 3}
 
-The Professional Behavior Skill on level 3 will be accomplished by carrying out the project in a professional and defined way. \\
-At first there will be a quality plan which defines the overall quality standards for the various parts of this project.
-This quality standards include a review process which will be applied to all documents to ensure a certain level of quality. 
-Every document produced needs to be reviewed by another group member. \\
+During the project it is my responsibility to write minutes of all of our meetings. This includes the customer and coach meetings, as well as out scrum meetings. 
+By continuously writing minutes I want to improve my skills in writing down important information during a meeting. Furthermore the minutes will contribute to an understandable development process and can be used in the end to state who did what.
+Also all important decision are written down including the most important arguments. Therefore everybody can reread it in the future if something is unclear and the customer and the coach can comprehend our decisions.
 
-Furthermore, all configuration items will be listed inside a configuration item table. The table is intended to keep track of all items and who is owner of this item. Also after each update of a configuration item, the table needs to be updated as well to keep track of the newest version. \\
-
-During the development process we will incorporate the scrum development approach which allows us to easily fulfill our customers requirements. One of the most important requirement is, that we can deliver a working product. Scrum ensures that at the end of each sprint, a working product in a well defined state can be delivered. The consequent use of scrum will also improve my knowledge about this development approach and how to carry out such a process.
-
-%% Maybe metion making minutes
+To measure improvements our group coach will review my minutes during the modules three times. Firstly at the beginning of October, then roughly at mid November and finally sometime before the assessments. The feedback given my the coach should state, that I took the previous feedback and the minutes I wrote improved over time.
