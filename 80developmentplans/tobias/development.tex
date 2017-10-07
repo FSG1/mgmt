@@ -10,10 +10,12 @@ The definition of each level and an example as stated in the HBO-I domain descri
 \subsection{Analyse Infrastructure Level 3}
 \label{ai3}
 
-Analyzing infrastructure on level 3 will be achieved by defining requirements for a continuous integration and deployment infrastructure. This requirement should reflect the customer's needs regarding deployment but should also include test automation for all layers of our software architecture. 
+Analyzing Infrastructure on level 3 will be achieved by defining requirements for a continuous integration and deployment infrastructure. This requirement should reflect the customer's needs regarding deployment but should also include test automation for all layers of our software architecture. 
 
+Continuous integration and deployment is a technique which is currently not taught during our study course. Therefore this is a new technology for me. 
+Nevertheless, this technology is an upcoming trend in software development, which currently is used more and more especially in combination with small container (docker, vagrant, etc.).
 \paragraph{Satisfaction criteria:} The requirements should meet the needs of the customer and the group. Therefore the requirements will be discussed with the group and the customer. The discussion will be written down in a minute to track the remarks. In the end the customer and the group should agree to all requirements.
-
+~\\~\\
 \begin{minipage}{\textwidth}
 \begin{quote}
 	\textbf{Infrastructure / Analyse / Level 3}: \\
@@ -24,12 +26,13 @@ Analyzing infrastructure on level 3 will be achieved by defining requirements fo
 \end{minipage}
 
 \subsection{Implement Infrastructure Level 3}
+\label{ii3}
 
-To achieve implementing infrastructure level 3 I will implement the continuous integration and deployment infrastructure which I got as a result during my research (see Section \ref{sec:research}).
+To achieve Implementing Infrastructure level 3 I will implement the continuous integration and deployment infrastructure which I got as a result during my research (see Section \ref{sec:research}).
 The research will include a concrete proposal which will be adopted and implemented for our project.
 
-\paragraph{Satisfaction criteria:} The infrastructure is satisfying if it contributes to our project by improving the development process or decreasing time spent with testing and deployment. This will be assessed by the other group members. The feedback of the customer will be taken into account.
-
+\paragraph{Satisfaction criteria:} The infrastructure is satisfying if it contributes to our project by improving the software quality or decreasing time spent with testing and deployment. This will be assessed by the other group members. The feedback of the customer will be taken into account.
+~\\~\\
 \begin{minipage}{\textwidth}
 \begin{quote}
 	\textbf{Infrastructure / Analyse / Level 3}: \\
@@ -42,17 +45,17 @@ The research will include a concrete proposal which will be adopted and implemen
 
 \subsection{Implement Software Level 3}
 
-Implementing software on level 3 will be achieved by creating unit tests for the database layer.
+Implementing Software on level 3 will be achieved by creating unit tests for the database layer.
 Normally during development, all parts of code will be tested using automated unit tests and the test coverage is considered as a quality metric. 
 Regardless of all this testing, the database and the logic and constraints on database layer are usually not tested at all.
-Only when it comes to integration or acceptance tests, a database will be used and hopefully it works.
+Only when it comes to integration or acceptance tests, a database will be used and hopefully it works. Therefore, implementing automated database is a innovation for software development. By making the tests as easy as possible hopefully more projects will adopt database testing.
 
 For our project I want to implement a unit tests for database constraints similar to the tests for the backend and the frontend. The tests should be run automatically and will be included into the continuous integration infrastructure.
 
 Because performing database tests is not famous, there is a lack of test frameworks and best practices. Therefore I need to find a proper framework or write a new one by incorporating different sources of information.
 
 \paragraph{Satisfaction criteria:} The database unit tests should cover at least 80\% of all database constraints as defined in the database documentation. Constraints also includes foreign keys or "not null" values.
-
+~\\~\\
 \begin{minipage}{\textwidth}
 \begin{quote}
 	\textbf{Software / Manage / Level 3}: \\
@@ -66,7 +69,7 @@ Because performing database tests is not famous, there is a lack of test framewo
 
 \subsection{Professional Behavior Level 3}
 
-During the project it is my responsibility to write minutes of all of our meetings. This includes the customer and coach meetings, as well as out scrum meetings. 
+For our project I took the initiative to write minutes of all meetings. This includes not only the customer and coach meetings, but also the different scrum meetings.
 By continuously writing minutes I want to improve my skills in writing down important information during a meeting. Furthermore the minutes will contribute to an understandable development process and can be used in the end to state who did what.
 Also all important decision are written down including the most important arguments. Therefore everybody can reread it in the future if something is unclear and the customer and the coach can comprehend our decisions.
 
