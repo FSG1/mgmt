@@ -45,6 +45,16 @@
 		Returns &  json array of semester objects which in turn are filled with corresponding modules. \\\hline
 		Returns & 200 OK \\ & 404 Not found  
 	\end{tcolorbox}
+
+	For the first sprint endpoint /sp/:sp\_id/curricula will be implemented.//
+	Example of this would be: sp/1/curricula
+	
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=curricula of student program,boxrule=1pt]
+		URL & \{source\}/sp/:id/curricula    \\\hline
+		Method   & GET \\\hline
+		Returns &  json array of curriculum objects which in turn are filled with corresponding semester objects. \\\hline
+		Returns & 200 OK \\ & 404 Niet gevonden  
+	\end{tcolorbox}
 	
 	\section{Endpoint definitions}
 	
