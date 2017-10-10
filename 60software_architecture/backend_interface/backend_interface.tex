@@ -22,16 +22,17 @@
 	
 	\section{Interface specification}
 	This document outlines the specifications of the back-end application. The back-end application has a RESTful interface with which the front-end communicates with. \\ \\
-	The data format used will be JSON. \\
+	The data format used will be JSON. \\ \\
+	The JSON objects can be found in the json\_objects.ods file in this directory.
 	
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=Complete overview of back-end endpoints. P stands for parameter,boxrule=0.5pt]
 		Uri path without source  & Description    \\\hline\hline
-		sp/p/curricula  & a list of curricula  \\\hline
-		sp/p/qualification & a list of qualifications \\\hline
-		semester/p/modules  & a list of modules  \\\hline
-		semester/p/qualifications   & a list of qualifications \\\hline
-		curriculum/:curriculum\_id/semesters  & a list of semesters  \\\hline
-		module/p/lg  & a list of learning goals 
+		/curricula  & an array of curricula  \\\hline
+		sp/p/qualification & an array of qualifications \\\hline
+		semester/p/modules  & an array of modules  \\\hline
+		semester/p/qualifications   & an array of qualifications \\\hline
+		curriculum/:curriculum\_id/semesters  & an array of semesters  \\\hline
+		module/p/lg  & an array of learning goals 
 	\end{tcolorbox}
 	
 	
@@ -66,7 +67,7 @@
 		URL & \{source\}/sp/:id/curricula    \\\hline
 		Method   & GET \\\hline
 		Returns &  json array of semester objects which in turn are filled with corresponding modules. \\\hline
-		Returns & 200 OK \\ & 404 Niet gevonden  
+		Returns & 200 OK \\ & 404 Not found   
 	\end{tcolorbox}
 
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=qualifications of student program,boxrule=1pt]
@@ -78,13 +79,13 @@
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=modules of a semester,boxrule=1pt]
 		URL & \{source\}semester/p/modules    \\\hline
 		Method   & GET \\\hline
-		Returns & 200 OK \\ & 404 Niet found  
+		Returns & 200 OK \\ & 404 Not found   
 	\end{tcolorbox}
 
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=qualifications after semester,boxrule=1pt]
 		URL & \{source\}semester/p/qualifications    \\\hline
 		Method   & GET \\\hline
-		Returns & 200 OK \\ & 404 Niet found  
+		Returns & 200 OK \\ & 404 Not found   
 	\end{tcolorbox}
 
 
@@ -92,7 +93,7 @@
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=learning goals of a module,boxrule=1pt]
 		URL & \{source\}module/p/lg    \\\hline
 		Method   & GET \\\hline
-		Returns & 200 OK \\ & 404 Niet found  
+		Returns & 200 OK \\ & 404 Not found   
 	\end{tcolorbox}
 
 \end{document}
