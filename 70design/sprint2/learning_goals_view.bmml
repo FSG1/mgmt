@@ -1,0 +1,67 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1193" measuredH="450" mockupW="1148" mockupH="400">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="153" w="870" h="34" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Learning%20goals%3A%20The%20student%20is%20able%20to...</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="181" w="179" h="34" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>LG%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="471" y="182" w="691" h="33" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>blablabla</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="214" w="179" h="34" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>LG%20x</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="471" y="215" w="691" h="33" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>blablabla</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="264" y="50" w="929" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="248" w="179" h="34" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>LG%20x</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="471" y="249" w="691" h="33" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>blablabla</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="314" w="179" h="34" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>LG%20x</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TextArea" x="471" y="315" w="691" h="33" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>blablabla</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::TextArea" x="292" y="280" w="870" h="34" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Learning%20goals%3A%20The%20group%20is%20able%20to...</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Tooltip" x="45" y="308" w="181" h="116" measuredW="188" measuredH="116" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>only%20shows%20group%20learning%20goals%20if%20they%20exist%20for%20this%20module</text>
+        <tooltipDirection>NE</tooltipDirection>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

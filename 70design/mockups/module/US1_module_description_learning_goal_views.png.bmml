@@ -1,25 +1,26 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1300" measuredH="267" mockupW="887" mockupH="258">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1350" measuredH="705" mockupW="965" mockupH="611">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::DataGrid" x="413" y="94" w="-1" h="-1" measuredW="503" measuredH="173" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::DataGrid" x="407" y="364" w="-1" h="-1" measuredW="503" measuredH="173" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>%2C%20beheren%20%2C%20analyseren%2C%20adviseren%2C%20ontwerpen%2C%20realiseren%0AgebruikersInteractie%2C%20%2C%2C%2Cx%2C%20%0Abedrijfsprocessen%2C%20x%2C%20%2C2%2C%2C%20%0Ainfrastructuur%2C%20x%2Cx%20%2C%20%0Asoftware%20%2C%20x%2C%20%2C%2Cx%2C%0Ahardware%20interfacing%2C%20%2Cx%20%2C%20</text>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="413" y="9" w="504" h="52" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="407" y="279" w="504" h="52" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <color>10066329</color>
         <text>LG%201</text>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="413" y="61" w="504" h="33" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="407" y="331" w="504" h="33" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>blablabla</text>
       </controlProperties>
     </control>
-    <control controlID="34" controlTypeID="com.balsamiq.mockups::Tooltip" x="931" y="94" w="369" h="132" measuredW="361" measuredH="0" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Tooltip" x="931" y="94" w="369" h="132" measuredW="361" measuredH="0" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>The%20LG%20matrix%20and%20module%20assesment%20are%20two%20different%20views%20put%20together.</text>
       </controlProperties>
     </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="385" y="176" w="965" h="529" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
