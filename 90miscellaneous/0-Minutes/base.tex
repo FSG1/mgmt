@@ -1,0 +1,46 @@
+
+\usepackage{float}
+
+
+\setcommittee{Fontys Venlo SoFa Group 1}
+
+\setmembers{
+	N.~Nieuwenhuis,
+	L.~Ehren,
+	S.~Brauer,
+	T.~Derksen
+}
+
+\newcommand{\allpresentLoek}{
+\setpresent{
+	\chair{L.~Ehren},
+	N.~Nieuwenhuis,
+	S.~Brauer,
+	\secretary{T.~Derksen}
+}
+}
+
+\newcommand{\allpresentNils}{
+	\setpresent{
+		\chair{N.~Nieuwenhuis},
+		L.~Ehren,
+		S.~Brauer,
+		\secretary{T.~Derksen}
+	}
+}
+
+\newenvironment{results}[0]{
+	\newcommand{\entry}[2]{\textbf{##1} & ##2 \\ \hline}
+	\newcommand{\sjoerd}[1]{\entry{Sjoerd}{##1}}
+	\newcommand{\nils}[1]{\entry{Nils}{##1}}
+	\newcommand{\loek}[1]{\entry{Loek}{##1}}
+	\newcommand{\tobias}[1]{\entry{Tobias}{##1}}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|p{0.2\textwidth}|p{0.8\textwidth}|}
+			\hline
+}{
+		\end{tabular}
+	\end{table}
+}
