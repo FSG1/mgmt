@@ -28,17 +28,17 @@
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=Complete overview of back-end endpoints. P stands for parameter,boxrule=0.5pt]
 		Uri path without source  & Description    \\\hline\hline
 		/curricula  & an array of curricula  \\\hline
-		/modules/:module\_code  & returns a module.  \\\hline
+		/curriculum/:curriculum\_id/modules/:module\_code  & returns a module.  \\\hline
 		/curriculum/:curriculum\_id/semesters  & an array of semesters 
 	\end{tcolorbox}
 	
 	
 	\section{Sprint implementation}
 	
-	For the second sprint the /modules/:module\_code will be implemented. example would be /modules/2
+	For the second sprint the /curriculum/:curriculum\_id/modules/:module\_code will be implemented. example would be /modules/2
 
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a module,boxrule=1pt]
-	URL & /modules/:module\_code    \\\hline
+	URL & /curriculum/:curriculum\_id/modules/:module\_code    \\\hline
 	Method   & GET \\\hline
 	Returns &  Returns a filled module\_content object as specified in sprint\_two\_JSON\_objects.png \\\hline
 	Returns & 200 OK \\ & 404 Not found
