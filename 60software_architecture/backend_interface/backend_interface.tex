@@ -29,20 +29,23 @@
 		Uri path without source  & Description    \\\hline\hline
 		/curricula  & an array of curricula  \\\hline
 		/curriculum/:curriculum\_id/modules/:module\_code  & returns a module.  \\\hline
-		/curriculum/:curriculum\_id/semesters  & an array of semesters 
+		/curriculum/:curriculum\_id/semesters  & an array of semesters \\\hline
+		/curriculum/:curriculum\_id/semesters/:semester\_number
 	\end{tcolorbox}
 	
 	
 	\section{Sprint implementation}
 	
-	For the second sprint the /curriculum/:curriculum\_id/modules/:module\_code will be implemented. example would be /modules/2
-
-	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a module,boxrule=1pt]
-	URL & /curriculum/:curriculum\_id/modules/:module\_code    \\\hline
-	Method   & GET \\\hline
-	Returns &  Returns a filled module\_content object as specified in sprint\_two\_JSON\_objects.png \\\hline
-	Returns & 200 OK \\ & 404 Not found
+	Sprint 3 implements the /curriculum/:curriculum\_id/semesters/:semester\_number endpoint.
+	
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete semester object,boxrule=1pt]
+		URL & /curriculum/:curriculum\_id/semesters/:semester\_number    \\\hline
+		Method   & GET \\\hline
+		Returns &  Returns a filled complete\_semester object as specified in sprint\_3\_us1.png \\\hline
+		Returns & 200 OK \\ & 404 Not found
 	\end{tcolorbox}
+
+
 
 	
 	\section{Endpoint definitions}
@@ -50,6 +53,14 @@
 	This section describes the urls more specifically with functionality, the JSON format and HTTP codes. The dataobjects are described in json\_objects.pdf in this repository\\\\
 	
 	\subsection{Curricula of student program}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a module,boxrule=1pt]
+		URL & /curriculum/:curriculum\_id/modules/:module\_code    \\\hline
+		Method   & GET \\\hline
+		Returns &  Returns a filled module\_content object as specified in sprint\_two\_JSON\_objects.png \\\hline
+		Returns & 200 OK \\ & 404 Not found
+	\end{tcolorbox}
+
 
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=semesters of curriculum,boxrule=1pt]
 		URL & /curriculum/:curriculum\_id/semesters   \\\hline
