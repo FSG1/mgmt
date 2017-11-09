@@ -30,20 +30,36 @@
 		/curricula  & an array of curricula  \\\hline
 		/curriculum/:curriculum\_id/modules/:module\_code  & returns a module.  \\\hline
 		/curriculum/:curriculum\_id/semesters  & an array of semesters \\\hline
-		/curriculum/:curriculum\_id/semesters/:semester\_number
+		/curriculum/:curriculum\_id/semesters/:semester\_number \\\hline
+		/sp/qualifications & returns a filter\_qualifications object \\\hline
+		/curriculum/:curriculum\_id/architecturallayer/:id/activity/:id
 	\end{tcolorbox}
 	
 	
 	\section{Sprint implementation}
 	
-	Sprint 3 implements the /curriculum/:curriculum\_id/semesters/:semester\_number endpoint.
+	Sprint 3 implements the /curriculum/:curriculum\_id/semesters/:semester\_number, /sp/qualifications and /curriculum/:curriculum\_id/architecturallayer/:id/activity/:id
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete semester object,boxrule=1pt]
+	URL & /curriculum/:curriculum\_id/semesters/:semester\_number    \\\hline
+	Method   & GET \\\hline
+	Returns &  Returns a filled complete\_semester object as specified in sprint\_3\_us1.png \\\hline
+	Returns & 200 OK \\ & 404 Not found
+\end{tcolorbox}
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete filter\_qualifications object,boxrule=1pt]
+	URL & /sp/qualifications    \\\hline
+	Method   & GET \\\hline
+	Returns &  Returns a filled filter\_qualifications object as specified in sprint\_3\_us6.png \\\hline
+	Returns & 200 OK \\ & 404 Not found
+\end{tcolorbox}
 	
-	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete semester object,boxrule=1pt]
-		URL & /curriculum/:curriculum\_id/semesters/:semester\_number    \\\hline
-		Method   & GET \\\hline
-		Returns &  Returns a filled complete\_semester object as specified in sprint\_3\_us1.png \\\hline
-		Returns & 200 OK \\ & 404 Not found
-	\end{tcolorbox}
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete qualifications\_overview\_semester object,boxrule=1pt]
+	URL & /curriculum/:curriculum\_id/architecturallayer/:id/activity/:id    \\\hline
+	Method   & GET \\\hline
+	Returns &  Returns a filled qualifications\_overview\_semester object as specified in sprint\_3\_us6.png \\\hline
+	Returns & 200 OK \\ & 404 Not found
+\end{tcolorbox}
 
 
 
