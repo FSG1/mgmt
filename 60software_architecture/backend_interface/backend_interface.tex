@@ -28,9 +28,9 @@
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=Complete overview of back-end endpoints. P stands for parameter,boxrule=0.5pt]
 		Uri path without source  & Description    \\\hline\hline
 		/curricula  & an array of curricula  \\\hline
-		/curriculum/:curriculum\_id/modules/:module\_code  & returns a module.  \\\hline
+		R /curriculum/:curriculum\_id/module/:module\_code  & returns a module.  \\\hline
 		/curriculum/:curriculum\_id/semesters  & an array of semesters \\\hline
-		/curriculum/:curriculum\_id/semesters/:semester\_number \\\hline
+		R /curriculum/:curriculum\_id/semester/:semester\_number \\\hline
 		/qualifications & returns a filter\_qualifications object \\\hline
 		/curriculum/:curriculum\_id/architecturallayer/:id/activity/:id
 	\end{tcolorbox}
@@ -41,7 +41,7 @@
 	Sprint 3 implements the /curriculum/:curriculum\_id/semesters/:semester\_number, /qualifications and /curriculum/:curriculum\_id/architecturallayer/:id/activity/:id
 
 \begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a complete semester object,boxrule=1pt]
-	URL & /curriculum/:curriculum\_id/semesters/:semester\_number    \\\hline
+	URL & /curriculum/:curriculum\_id/semester/:semester\_number    \\\hline
 	Method   & GET \\\hline
 	Returns &  Returns a filled complete\_semester object as specified in sprint\_3\_us1.png \\\hline
 	Returns & 200 OK \\ & 404 Not found
@@ -71,7 +71,7 @@
 	\subsection{Curricula of student program}
 
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns a module,boxrule=1pt]
-		URL & /curriculum/:curriculum\_id/modules/:module\_code    \\\hline
+		URL & /curriculum/:curriculum\_id/module/:module\_code    \\\hline
 		Method   & GET \\\hline
 		Returns &  Returns a filled module\_content object as specified in sprint\_two\_JSON\_objects.png \\\hline
 		Returns & 200 OK \\ & 404 Not found
