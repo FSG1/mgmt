@@ -1,0 +1,233 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1536" measuredH="1028" mockupW="1197" mockupH="938">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="256" w="305" h="28" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Module%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="713" y="256" w="565" h="28" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>software%20factory</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="314" w="145" h="34" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Semester</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="553" y="314" w="145" h="34" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>7</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextArea" x="698" y="314" w="290" h="34" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Credits%20%28ECTS%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="988" y="314" w="290" h="34" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>15</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="348" w="145" h="34" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Lectures/%20week</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::TextArea" x="553" y="348" w="145" h="34" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::TextArea" x="698" y="348" w="145" h="34" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Practical%20Hours/week</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::TextArea" x="843" y="348" w="145" h="34" measuredW="200" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::TextArea" x="988" y="347" w="145" h="34" measuredW="200" measuredH="140" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Total%20Effort</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::TextArea" x="1133" y="348" w="145" h="34" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>140%20hours</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="382" w="145" h="54" measuredW="200" measuredH="140" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Lecturers</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::TextArea" x="554" y="381" w="428" h="55" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>Th.%20Dorssers%20%09%09X%0ALect%20a%09%09%09X</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="440" w="145" h="34" measuredW="200" measuredH="140" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Credentials</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::TextArea" x="553" y="440" w="725" h="34" measuredW="200" measuredH="140" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Based%20on%20previous%20CPP%20semester%204%20course%20by%20Th%20Dorssers%20et%20al</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="474" w="870" h="34" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Introduction%20and%20motivation</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="506" w="870" h="33" measuredW="200" measuredH="140" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>blablabla</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="554" w="870" h="34" measuredW="200" measuredH="140" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Topics</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="588" w="450" h="59" measuredW="200" measuredH="140" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>-%20C%20memory%20management%09%09X%0A-%20Makefile%09%09%09%09%09%09X%0A-%20blabla%09%09%09%09%09%09X</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="662" w="870" h="34" measuredW="200" measuredH="140" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Teaching%20material</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="696" w="450" h="46" measuredW="200" measuredH="140" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>blablabla%09X%0Abook%20A%09X</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="757" w="870" h="34" measuredW="200" measuredH="140" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>ADDITIONAL%20INFORMATION%20%28ON%20GRADING%2C%20ASSESSMENTS%2C%20RETAKES%2C%20PRACTICAL%20PARTS%2C%20..%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="791" w="870" h="33" measuredW="200" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Information%20regarding%20grading</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Tooltip" x="918" y="899" w="170" h="129" measuredW="172" measuredH="0" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>When%20clicked%20will%20go%20to%20the%20viewing%20view</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="339" y="90" w="1027" h="809" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="422" y="202" w="-1" h="-1" measuredW="33" measuredH="27" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3C</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Button" x="461" y="202" w="-1" h="-1" measuredW="33" measuredH="27" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::TextArea" x="422" y="181" w="72" h="21" measuredW="200" measuredH="140" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Navigation</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Canvas" x="408" y="170" w="870" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Button" x="789" y="832" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Save</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Tooltip" x="1366" y="335" w="170" h="129" measuredW="164" measuredH="0" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>White%20fields%20are%20input%20fields</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::TextArea" x="858" y="592" w="359" h="32" measuredW="200" measuredH="140" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Button" x="1230" y="699" w="-1" h="-1" measuredW="47" measuredH="27" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>Add</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::ComboBox" x="982" y="381" w="235" h="-1" measuredW="69" measuredH="23" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lect%20a</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Button" x="1230" y="379" w="-1" h="-1" measuredW="47" measuredH="27" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>Add</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Tooltip" x="1366" y="474" w="170" h="129" measuredW="153" measuredH="0" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>X%20can%20be%20clicked%20to%20remove%20a%20value</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::TextArea" x="858" y="696" w="275" h="32" measuredW="200" measuredH="140" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Button" x="1230" y="595" w="-1" h="-1" measuredW="47" measuredH="27" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <text>Add</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::ComboBox" x="1133" y="696" w="97" h="-1" measuredW="62" measuredH="23" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Type</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::TextArea" x="408" y="284" w="305" h="28" measuredW="200" measuredH="140" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>Module%20code%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::TextArea" x="713" y="284" w="565" h="28" measuredW="200" measuredH="140" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>SOFA</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::Button" x="903" y="832" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
