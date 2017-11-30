@@ -39,11 +39,17 @@
 	
 	\section{Sprint implementation}
 	
-		\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns information to edit a module,boxrule=1pt]
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns information to edit a module,boxrule=1pt]
 		URL & /module/:module\_code    \\\hline
-		Method   & GET and POST \\\hline
-		Gets	& gets a filled editable\_module\_input as found in sprint\_4\_us3  \\hline
+		Method   & GET \\\hline
 		Returns &  Returns a filled editable\_module\_output as found in sprint\_4\_us3 \\\hline
+		Returns & 200 OK \\ & 404 Not found
+	\end{tcolorbox}
+
+	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns information to edit a module,boxrule=1pt]
+		URL & /module/:module\_ID    \\\hline
+		Method   & POST \\\hline
+		Gets	& gets a filled editable\_module\_input as found in sprint\_4\_us3  \\\hline
 		Returns & 200 OK \\ & 404 Not found
 	\end{tcolorbox}
 	
