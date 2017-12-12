@@ -13,6 +13,8 @@
 \begin{hiddenitems}
 	\item What did we do last time
 	\item What will we do today
+	\item Discussion about PDF generation
+	\item Customer discussion about PDF generation
 \end{hiddenitems}
 
 \section{What did we do last time}
@@ -33,5 +35,31 @@
 	\tobias{Work on personal research; Discuss solutions to the PDF generation problem}
 \end{results}
 
+
+\section{Discussion about PDF generation}
+There are different options for creating PDF inside the browser and download it to the client:
+\begin{itemize}
+	\item JS PDF
+	\item Pdf Make
+	\item PhantomJS
+	\item Browser's native print support
+\end{itemize}
+
+All of them have several serious disadvantages.
+JS PDF and PdfMake can either print an image of the shown module description into a pdf or we have to create the whole description manually by calculating all positions.
+~\\
+PhantomJS can render any HTML including Javascript to different output types. But we need to create a proper HTML with CSS styling to get this running properly. 
+~\\
+The browser's native print support is highly dependent on the concrete browser and the operating system which is running. It produces different output on different browsers and platforms.
+
+\section{Customer discussion about PDF generation}
+The option we research and all the disadvantages we found (as described above) has been presented to our customer.
+The customer was not happy which one of the given options.
+We discussed using LaTex to generate a proper PDF. 
+Fontys does not yet have a proper LaTex template for module descriptions, the descriptions are currently managed in a document format.
+Therefore we need to create a proper LaTex template first, which we then can fill with concrete data and give to a proper compiler.
+~\\
+We discussed, that the time remaining for this module is limited and we probably are not able to create a full LaTex template. We will now divide the module description into parts.
+We will implement these parts one after each other, so we get a working generation at the end of the sprint, but possibly not all parts of the module description are in there. 
 
 \end{document}
