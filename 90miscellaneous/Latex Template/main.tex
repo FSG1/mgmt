@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{array}
+
+\geometry{a4paper}
+
+\input{functions}
+
+
+
+\begin{document}
+
+\begin{header}
+	\Module{PRC1 - Programming Concepts 1}
+	\Semester{1}
+	\Credits{5}
+	\ValidOf{28-08-2017}
+	\Lectures{1}
+	\Practical{5}
+	\TotalEffort{120}
+	\Authors{Tobias Derksen, Loek Ehren}
+	\Credentials{In memory of Sjoerd who went insane during the SoFa project.}
+\end{header}
+
+\Introduction{
+	This is an introduction \newline
+	with multiple lines which is important \newline
+	to structure this part correctly.
+}
+
+\begin{learninggoals}
+	\LearningGoal{LG 1}{First Learning Goal}
+	\LearningGoal{LG 2}{Second Learning Goal}
+	\LearningGoal{LG 3}{Third Learning Goal}
+	\GroupGoals
+	\LearningGoal{LG 4}{First Group Learning Goal}
+	\LearningGoal{LG 5}{Second Group Learning Goal}
+\end{learninggoals}
+
+\begin{topics}
+	\Topic{First Topic}
+	\Topic{Second Topic}
+\end{topics}
+
+\begin{table}[H]
+	\begin{tabularx}{\textwidth}{|c||Y|Y|Y|Y|Y||Y|Y|Y|Y|Y||Y|Y|}
+		\hline
+		\multicolumn{13}{|l|}{\grey Contribution to final competence profile} \\ \hline
+		\multirow{2}{*}[-2.15cm]{\rotatebox{90}{Learning Goal}} & \multicolumn{5}{c||}{Architectural Layers} & \multicolumn{5}{c||}{Activities} & \multicolumn{2}{c|}{enter X} \\ \cline{2-13}
+		& \rotatebox{90}{User Interface} & \rotatebox{90}{Business Processes} & \rotatebox{90}{Infrastructure} & \rotatebox{90}{Software} & \rotatebox{90}{Hardware Interfacing} & \rotatebox{90}{Manage} & \rotatebox{90}{Analyse} & \rotatebox{90}{Advice} & \rotatebox{90}{Design} & \rotatebox{90}{Implement} & \rotatebox{90}{Professional Behavior~~~} & \rotatebox{90}{Research Skills} \\ \hline
+		
+		LG 1 & X & & & X & & & & & & 1 & & \\ \hline
+		LG 2 &  & & & X & & & & & & 1 & & \\ \hline
+		LG 4 & X & & & X & & & & & & 1 & & \\ \hline
+		LG 5 &  & & & X & & & & & & 1 & & \\ \hline
+		LG 10 & X & & & X & & & & & & 1 & & \\ \hline
+		LG 11 &  & & & X & & & & & & 1 & & \\ \hline
+	\end{tabularx}
+\end{table}
+\nospace
+\begin{table}[H]
+	\begin{tabularx}{\textwidth}{|l|X|c|c|}
+		\hline
+		\multicolumn{4}{|l|}{\greyCell{Exam Information}} \\ \hline
+		ProgressCode & Description & Percentage & Minimum Grade \\ \hline
+		BUA1 & Business Administration & 100\% & 5.5 \\ \hline
+	\end{tabularx}
+\end{table}
+\nospace
+\begin{table}[H]
+	\begin{tabularx}{\textwidth}{|X|}
+		\hline
+		\greyCell{Teaching Material} \\ \hline
+		\begin{itemize}
+			\setlength{\itemindent}{0mm}
+			\setlength{\itemsep}{0mm}
+			\item First book
+			\item Second article
+		\end{itemize} \\ \hline
+	\end{tabularx}
+\end{table}
+\nospace
+\begin{table}[H]
+	\begin{tabularx}{\textwidth}{|X|}
+		\hline
+		\greyCell{Prior Knowledge} \\ \hline
+		Lorem ipsum and lorem ipsum and more lorem ipsum \\ \hline
+	\end{tabularx}
+\end{table}
+\nospace
+\begin{table}[H]
+	\begin{tabularx}{\textwidth}{|X|}
+		\hline
+		\greyCell{Additional Information} \\ \hline
+		Lorem ipsum and lorem ipsum and more lorem ipsum \\ \hline
+	\end{tabularx}
+\end{table}
+
+\end{document}
