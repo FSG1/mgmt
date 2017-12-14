@@ -13,6 +13,7 @@
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{geometry}
+\usepackage{enumitem}
 \usepackage{array}
 
 \geometry{a4paper}
@@ -75,24 +76,18 @@
 	\begin{tabularx}{\textwidth}{|l|X|c|c|}
 		\hline
 		\multicolumn{4}{|l|}{\greyCell{Exam Information}} \\ \hline
-		ProgressCode & Description & Percentage & Minimum Grade \\ \hline
+		\greyCell{ProgressCode} & \greyCell{Description} & \greyCell{Percentage} & \greyCell{Minimum Grade} \\ \hline
 		BUA1 & Business Administration & 100\% & 5.5 \\ \hline
 	\end{tabularx}
 \end{table}
 \nospace
-\begin{table}[H]
-	\begin{tabularx}{\textwidth}{|X|}
-		\hline
-		\greyCell{Teaching Material} \\ \hline
-		\begin{itemize}
-			\setlength{\itemindent}{0mm}
-			\setlength{\itemsep}{0mm}
-			\item First book
-			\item Second article
-		\end{itemize} \\ \hline
-	\end{tabularx}
-\end{table}
-\nospace
+
+\begin{teachingmaterial}
+	\Material{First Book}
+	\Material{Second Book}
+	\Material{Maybe a website}
+\end{teachingmaterial}
+
 \begin{table}[H]
 	\begin{tabularx}{\textwidth}{|X|}
 		\hline
@@ -101,12 +96,9 @@
 	\end{tabularx}
 \end{table}
 \nospace
-\begin{table}[H]
-	\begin{tabularx}{\textwidth}{|X|}
-		\hline
-		\greyCell{Additional Information} \\ \hline
-		Lorem ipsum and lorem ipsum and more lorem ipsum \\ \hline
-	\end{tabularx}
-\end{table}
+
+\AdditionalInformation{
+	Lorem ipsum and lorem ipsum and more lorem ipsum
+}
 
 \end{document}

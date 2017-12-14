@@ -123,12 +123,37 @@
 		\tabularx{\textwidth}{|X|}
 			\hline
 			\greyCell{Topics} \\ \hline
-			\itemize
-			\setlength{\itemindent}{0mm}
-			\setlength{\itemsep}{0mm}
+			\itemize[noitemsep,topsep=0pt]
 }{		
-		\enditemize \\ \hline
+		\enditemize  \\ \hline
 		\endtabularx
 	\endtable
+	\nospace
+}
+
+\newenvironment{teachingmaterial}[0]{
+	\newcommand{\Material}[1]{
+		\item ##1
+	}
+	\table[H]
+	\tabularx{\textwidth}{|X|}
+	\hline
+	\greyCell{Teaching Material} \\ \hline
+	\itemize[noitemsep,topsep=0pt]
+}{		
+	\enditemize \\ \hline
+	\endtabularx
+	\endtable
+	\nospace
+}
+
+\newcommand{\AdditionalInformation}[1]{
+	\begin{table}[H]
+		\begin{tabularx}{\textwidth}{|X|}
+			\hline
+			\greyCell{Additional Information} \\ \hline
+			#1 \\ \hline
+		\end{tabularx}
+	\end{table}
 	\nospace
 }
