@@ -3,6 +3,7 @@
 \newcommand{\multicell}[2]{\multicolumn{#1}{l|}{#2}}
 \newcommand{\greyCell}[1]{\grey{}\cell{\textbf{#1}}}
 \newcommand{\nospace}[0]{\vspace{-1.8em}}
+\renewcommand{\rotate}[1]{\rotatebox{90}{#1}}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
@@ -156,4 +157,30 @@
 		\end{tabularx}
 	\end{table}
 	\nospace
+}
+
+\newenvironment{exams}[0]{
+	\newcommand{\Exam}[4]{
+		##1 & ##2 & ##3\% & ##4 \\ \hline
+	}
+	
+	\table[H]
+		\tabularx{\textwidth}{|l|X|c|c|}
+		\hline
+		\multicolumn{4}{|l|}{\greyCell{Exam Information}} \\ \hline
+		\greyCell{ProgressCode} & \greyCell{Description} & \greyCell{Percentage} & \greyCell{Minimum Grade} \\ \hline
+}{
+		\endtabularx
+	\endtable
+	\nospace
+}
+
+\newenvironment{competences}[0]{
+	\newcommand{\BehaviorValue}[0]{}
+	\newcommand{\ResearchValue}[0]{}
+	\newcommand{\Research}[1]{\renewcommand{\ResearchValue}[0]{##1}}
+	\newcommand{\ProBehaviour}[1]{\renewcommand{\BehaviorValue}[0]{##1}}
+	
+
+}{
 }
