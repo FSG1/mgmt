@@ -56,64 +56,20 @@
 	\Topic{Second Topic}
 \end{topics}
 
-\begin{table}[H]
-	\begin{tabularx}{\textwidth}{|l|Y|Y|Y|Y|Y||Y|Y|}
-		\hline
-		\multicolumn{8}{|l|}{\greyCell{Contribution to final competence profile}} \\ \hline
-		& \rotate{Manage} & \rotate{Analyse} & \rotate{Advise} & \rotate{Design} & \rotate{Implement} & \rotate{Professional Behavior~~} & \rotate{Research Skills} \\ \hline
-		User Interaction & & & & & & & \\ \hline
-		Business Processes & & & & & & & \\ \hline
-		Infrastructure & & 2 & & & & & \\ \hline
-		Software & & & & 3 & & & \\ \hline
-		Hardware Interfacing & & & & & & & \\ \hline
-		\multicolumn{6}{|l||}{\grey} & 1 & 1 \\ \hline
-	\end{tabularx}
-\end{table}
-\nospace
-
-\begin{competences}
+\begin{skills}
 	\Research{2}
+	\ProBehaviour{1}
 	
-	\begin{matrix}
-		\begin{row}{User Interaction}
-			\Analyse{1}
-		\end{row}
-	\end{matrix}
-%	\begin{row}{User Interface}
-%	\end{row}
+	\Software{
+		\Design{2}
+		\Implement{3}
+	}
 
-%	\begin{row}{Business Processes}
-%	\end{row}
-
-	%\begin{abcdef}{Infrastructure}
-	%	\Analyse{1}
-	%	\Advise{2}
-	%\end{abcdef}
-
-	%\begin{abcdef}{Software}
-	%	\Design{3}
-	%	\Implement{3}
-	%\end{abcdef}
-
-%	\begin{row}{Hardware Interfacing}
-%	\end{row}
-\end{competences}
-
-%\begin{table}[H]
-%	\begin{tabularx}{\textwidth}{|c||Y|Y|Y|Y|Y||Y|Y|Y|Y|Y||Y|Y|}
-%		\hline
-%		\multicolumn{13}{|l|}{\grey Contribution to final competence profile} \\ \hline
-%		\multirow{2}{*}[-2.15cm]{\rotatebox{90}{Learning Goal}} & \multicolumn{5}{c||}{Architectural Layers} & \multicolumn{5}{c||}{Activities} & \multicolumn{2}{c|}{enter X} \\ \cline{2-13}
-%		& \rotatebox{90}{User Interface} & \rotatebox{90}{Business Processes} & \rotatebox{90}{Infrastructure} & \rotatebox{90}{Software} & \rotatebox{90}{Hardware Interfacing} & \rotatebox{90}{Manage} & \rotatebox{90}{Analyse} & \rotatebox{90}{Advice} & \rotatebox{90}{Design} & \rotatebox{90}{Implement} & \rotatebox{90}{Professional Behavior~~~} & \rotatebox{90}{Research Skills} \\ \hline
-%		
-%		LG 1 & X & & & X & & & & & & 1 & & \\ \hline
-%		LG 2 &  & & & X & & & & & & 1 & & \\ \hline
-%		LG 4 & X & & & X & & & & & & 1 & & \\ \hline
-%		LG 5 &  & & & X & & & & & & 1 & & \\ \hline
-%		LG 10 & X & & & X & & & & & & 1 & & \\ \hline
-%		LG 11 &  & & & X & & & & & & 1 & & \\ \hline
-%	\end{tabularx}
-%\end{table}
+	\Infrastructure{
+		\Manage{1}
+		\Analyse{2}
+	}
+\end{skills}
 
 \begin{exams}
 	\Exam{BUA1}{Business Administration 1}{100}{5.5}
@@ -125,14 +81,10 @@
 	\Material{Maybe a website}
 \end{teachingmaterial}
 
-\begin{table}[H]
-	\begin{tabularx}{\textwidth}{|X|}
-		\hline
-		\greyCell{Prior Knowledge} \\ \hline
-		Lorem ipsum and lorem ipsum and more lorem ipsum \\ \hline
-	\end{tabularx}
-\end{table}
-\nospace
+\begin{priorknowledge}
+	\Module{MOD1}{Modeling 1}{concurrent}
+	\Module{DBS1}{Databases 1}{mandatory}
+\end{priorknowledge}
 
 \AdditionalInformation{
 	Lorem ipsum and lorem ipsum and more lorem ipsum
