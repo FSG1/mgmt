@@ -34,15 +34,14 @@
 		/qualifications & returns a filter\_qualifications object \\\hline
 		/curriculum/:curriculum\_id/architecturallayer/:id/activity/:id \\\hline
 		/module/:module\_code & returns a module for editing or gets a edited module \\\hline
-		/module/:module\_code/pdf & returns a PDF according to the options send to it
+		/curriculum/:curriculum\_id/module/:module\_code/pdf & returns a modules PDF 
 	\end{tcolorbox}
 	
 	\section{Sprint implementation}
 	
 	\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y||Y},title=returns information to edit a module,boxrule=1pt]
-		URL & /module/:module\_code/pdf    \\\hline
-		Method   & POST \\\hline
-		Gets	& gets a string array with options like: {A,B,C}  \\\hline
+		URL & /curriculum/:curriculum\_id/module/:module\_code/pdf    \\\hline
+		Method   & GET \\\hline
 		Returns &  Returns a PDF \\\hline
 		Returns & 200 OK \\ & 404 Not found \\ & 401 Unauthorized
 	\end{tcolorbox}
