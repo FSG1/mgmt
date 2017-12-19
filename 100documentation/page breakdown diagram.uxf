@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>560</y>
+      <w>480</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Semester overview page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>530</y>
+      <w>440</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Module page</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>340</y>
+      <w>480</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Qualifications overview page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>760</y>
+      <w>480</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Edit module page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>400</x>
+      <y>250</y>
+      <w>680</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Pages are white
+Components are blue
+What backend-service method they use is gray
+what models the page uses is red
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>340</y>
+      <w>410</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Curriculum overview page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>410</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>qualification-overview.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>410</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>module-overview.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>630</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>semester-overview.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>600</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>module.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>640</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>skillmatrix.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>830</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>module-edit.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>870</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>module-edit.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>910</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>skillmatrix-edit.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>790</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nav.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>590</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nav.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>560</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nav.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>370</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nav.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>370</y>
+      <w>300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>nav.component
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>370</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getCurricula
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>410</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getSemesters
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>450</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Curriculum
+Semester
+Module
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>370</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getQualifications
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>410</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getQualificationTable
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>450</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ArchitecturalLayer
+Semester
+Module
+QualificationsOverviewSemester
+QualificationsLearningGoal
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>450</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>FilterQualifications
+Curriculum
+LifecycleActivity
+QualificationsModule
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>560</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getModuleContent
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>600</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getModulePDF
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>680</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ModuleContent
+StudentSkill
+PriorKnowledgeReference
+AssesmentPart
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>680</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ArchitecturalLayer
+LifecycleActivity
+LearningGoal
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>590</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getSemester
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>630</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CompleteSemester
+Module
+StudentSkill
+LifecycleActivity
+ArchitecturalLayer
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>790</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>getEditableModule
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>830</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>updateEditableModule
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>870</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>EditableModuleOutput
+EditableModuleInput
+TeachingMaterial
+Lecturer
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>950</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PriorKnowledgeReference
+SimpleModule
+LearningGoal
+AssesmentPart
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
