@@ -2,73 +2,125 @@
 
 \chapter{Run with Docker}
 
-For each part of the project there is a docker file which can be used to run the software.
+For each part of the project there is a docker\footnote{\url{https://www.docker.com/get-docker}}  file which can be used to run the software.
 The docker file automates the build process and encapsulates it into a container.
 These containers runs on every operating system and does not need any external dependencies besides the installed docker daemon.
 You can compose the separate containers to a full services which includes all parts of the project.
 
-~\\
-\textbf{This method is the recommended way to deploy the project to a server.}
-
 \section{Database}
 \label{docker:db}
 
-\begin{lstlisting}[caption={Build Database Container}]
-#!/bin/bash
-cd database
-docker build -t fmms-database .
-\end{lstlisting}
+To setup a database server and create the proper users and databases can be very error-prone. 
+Therefore a docker container can be used which automatically sets up the user, the database and tables.
 
-\begin{lstlisting}[caption={Run Database Container}]
-#!/bin/bash
+During the creation process, the SQL files in the "scripts" directory are executed, sorted by name (that's why there are numbers in front of the filenames).
+The database repository only contains the table structure and does not contain any data. Nevertheless, data can be automatically imported by copying a proper SQL file into the "scripts" directory before building the container.
+
+When running the database as a docker container, please make sure that there are no other databases running on port 5432 or change the port mapping.
+
+\begin{minipage}{\textwidth}
+\begin{lstlisting}[caption={Build and run Database Container}]
+cd database
+# Build container
+docker build -t fmms-database .
+# Run container
 docker run -d --name fmms-database -p 5432:5432 fmms-database
 \end{lstlisting}
-
+\end{minipage}
 
 \section{Backend}
 \label{docker:backend}
 
-\begin{lstlisting}[caption={Build Backend Container}]
-#!/bin/bash
-cd backend
-docker build -t fmms-backend .
-\end{lstlisting}
+The configuration of the Backend API can be done without any changes to the source code.
+During initialization, environment variables \footnote{\url{https://en.wikipedia.org/wiki/Environment_variable}} are read and the values will be used as configuration.
+There are basically three important parts to configure:
+\begin{itemize}
+	\item The Backend URI containing port and base url
+	\item The database connection
+	\item Username and password for restricted actions
+\end{itemize}
 
-\begin{lstlisting}[caption={Run Backend Container}]
-#!/bin/bash
+Restricted actions are all actions which can change the data in the database. The backend uses HTTP Basic authentication to authenticate users who wants to perform restricted actions. The credentials are currently hard-coded into the configuration and can be set via environment variables.
+
+The default values has been chosen to allow the software to be run locally. For server deployment other values need to be entered.
+The default database URL contains the default docker host ip address, which implies that a PostgreSQL server is bound to the port 5432 of the host.
+
+The environment configuration can be given into the docker containers using the docker environment functionality (see the Docker documentation \footnote{\url{https://docs.docker.com/engine/reference/run/\#env-environment-variables}}). 
+
+\begin{minipage}{\textwidth}
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Name} & \textbf{Default Value} &  \\ \hline
+		HOST & 0.0.0.0 & IP Address to bind server socket to. Usually the default value will do the job. \\ \hline
+		PORT & 8080 & Server port to listen on \\ \hline
+		BASE & /fmms & API Base URI \\ \hline
+		DB & 172.17.0.1:5432/modulemanagement & DB URL for JDBC postgres driver format: <IP>:<PORT>/<databasename> \\ \hline
+		DB\_USER & fmms & Username to access the database \\ \hline
+		DB\_PASSWD & fmms & Password to access the database \\ \hline
+		AUTH\_USER & fmms & Username for restricted actions \\ \hline
+		AUTH\_PASSWORD & modulemanagement & Password for restricted actions \\ \hline
+	\end{tabularx}
+	\caption{Environment Configuration for Backend}
+	\label{backend-env}
+\end{table}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{lstlisting}[caption={Build Backend Container}]
+cd backend
+# Build container
+docker build -t fmms-backend .
+# Run container
 docker run -d --name fmms-backend -p 8080:8080 fmms-backend
 \end{lstlisting}
+\end{minipage}
 
 \section{Frontend}
 \label{docker:frontend}
 
-\begin{lstlisting}[caption={Build Frontend Container}]
-#!/bin/bash
-cd frontend
-docker build -t fmms-frontend .
-\end{lstlisting}
+The frontend configuration needs to be done inside the source code before building the container.
+The default configuration works only for local use and is not suitable for server deployment.
+The configuration is done via environment files which are loaded based on cli arguments. \footnote{\url{http://tattoocoder.com/angular-cli-using-the-environment-option/}}
 
-\begin{lstlisting}[caption={Run Frontend Container}]
-#!/bin/bash
+
+\begin{minipage}{\textwidth}
+\begin{lstlisting}[caption={Build Frontend Container}]h
+cd frontend
+# Build container
+docker build -t fmms-frontend .
+# Run container
 docker run -d --name fmms-frontend -p 4200:4200 fmms-frontend
 \end{lstlisting}
+\end{minipage}
+
 
 
 
 \section{Compose}
-To run all parts of the software inside docker containers, Docker Compose can be used to run and supervise the docker containers.
+\label{docker:compose}
+To run all parts of the software inside docker containers, Docker Compose\footnote{\url{https://docs.docker.com/compose/install/}} can be used to run and supervise the docker containers.
 Therefore a docker compose file is needed which defines the structure of the application and the needed parameters.
 The following listing shows a docker compose file which contains all needed configuration to run the project on your local machine.
 ~\\
-To use docker compose perform the following steps:
+To use docker compose perform the following steps: \\ \\
+\begin{minipage}{\textwidth}
 \begin{enumerate}
 	\item Install Docker and Docker-Compose
 	\item Build Database, Backend and Frontend as explained in sections \ref{docker:db}, \ref{docker:backend} and \ref{docker:frontend}
 	\item Put the content of listing \ref{lst:compose} into a file named \glqq docker-compose.yml\grqq
 	\item Run shell command \glqq docker-compose up -d\grqq{} in the directory with the file created in the previous step
 \end{enumerate}
-
+\end{minipage}
 
 \begin{minipage}{\textwidth}
 	\lstinputlisting[language={},caption={Docker Compose File},label={lst:compose}]{sources/compose.yml}
 \end{minipage}
+
+
+\section{Deployment on server}
+\label{docker:deployment}
+
+
