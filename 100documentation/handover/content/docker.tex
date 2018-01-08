@@ -1,0 +1,74 @@
+% !TeX spellcheck = en_US
+
+\chapter{Run with Docker}
+
+For each part of the project there is a docker file which can be used to run the software.
+The docker file automates the build process and encapsulates it into a container.
+These containers runs on every operating system and does not need any external dependencies besides the installed docker daemon.
+You can compose the separate containers to a full services which includes all parts of the project.
+
+~\\
+\textbf{This method is the recommended way to deploy the project to a server.}
+
+\section{Database}
+\label{docker:db}
+
+\begin{lstlisting}[caption={Build Database Container}]
+#!/bin/bash
+cd database
+docker build -t fmms-database .
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Run Database Container}]
+#!/bin/bash
+docker run -d --name fmms-database -p 5432:5432 fmms-database
+\end{lstlisting}
+
+
+\section{Backend}
+\label{docker:backend}
+
+\begin{lstlisting}[caption={Build Backend Container}]
+#!/bin/bash
+cd backend
+docker build -t fmms-backend .
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Run Backend Container}]
+#!/bin/bash
+docker run -d --name fmms-backend -p 8080:8080 fmms-backend
+\end{lstlisting}
+
+\section{Frontend}
+\label{docker:frontend}
+
+\begin{lstlisting}[caption={Build Frontend Container}]
+#!/bin/bash
+cd frontend
+docker build -t fmms-frontend .
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Run Frontend Container}]
+#!/bin/bash
+docker run -d --name fmms-frontend -p 4200:4200 fmms-frontend
+\end{lstlisting}
+
+
+
+\section{Compose}
+To run all parts of the software inside docker containers, Docker Compose can be used to run and supervise the docker containers.
+Therefore a docker compose file is needed which defines the structure of the application and the needed parameters.
+The following listing shows a docker compose file which contains all needed configuration to run the project on your local machine.
+~\\
+To use docker compose perform the following steps:
+\begin{enumerate}
+	\item Install Docker and Docker-Compose
+	\item Build Database, Backend and Frontend as explained in sections \ref{docker:db}, \ref{docker:backend} and \ref{docker:frontend}
+	\item Put the content of listing \ref{lst:compose} into a file named \glqq docker-compose.yml\grqq
+	\item Run shell command \glqq docker-compose up -d\grqq{} in the directory with the file created in the previous step
+\end{enumerate}
+
+
+\begin{minipage}{\textwidth}
+	\lstinputlisting[language={},caption={Docker Compose File},label={lst:compose}]{sources/compose.yml}
+\end{minipage}

@@ -20,7 +20,8 @@
 
 \input{functions}
 
-
+\def\mydate{\leavevmode\hbox{\twodigits\day}-\twodigits\month-\the\year}
+\def\twodigits#1{\ifnum#1<10 0\fi\the#1}
 
 \begin{document}
 
@@ -28,7 +29,7 @@
 	\Module{PRC1 - Programming Concepts 1}
 	\Semester{1}
 	\Credits{5}
-	\ValidOf{28-08-2017}
+	\ValidOf{\mydate}
 	\Lectures{1}
 	\Practical{5}
 	\TotalEffort{120}

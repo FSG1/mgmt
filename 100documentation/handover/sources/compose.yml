@@ -1,0 +1,48 @@
+version: '2'
+
+networks:
+  fmms:
+    driver: bridge
+
+services:
+  database:
+    restart: always
+    image: fmms-database
+    ports:
+      - 5432:5432
+    networks:
+      - fmms
+
+  backend:
+    restart: always
+    image: fmms-backend
+    ports:
+      - 8080:8080
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8080
+      - BASE=/fmms
+      - DB=database:5432/modulemanagement
+      - DB_USER=module
+      - DB_PASSWD=fmms
+      - AUTH_USER=fmms
+      - AUTH_PASSWORD=fmms
+    volumes:
+      - maven:/root/.m2
+    networks:
+      - fmms
+
+  frontend:
+    restart: always
+    image: fmms-frontend
+    command: ["--no-live-reload", "--no-watch"]
+    depends_on:
+      - backend
+    ports:
+      - 4200:4200
+    networks:
+      - fmms
+
+volumes:
+  maven:
+    driver: local
