@@ -1,11 +1,4 @@
-\documentclass{report}
-\usepackage{parskip}
-\usepackage{listings}
-\usepackage{hyperref}
-\hypersetup{
-	hidelinks = true
-}
-\begin{document}
+\chapter{Backend}
 	The backend of FMMS consists of a REST API connected to a PostgreSQL database. The REST API is written in Java using Jersey. Jersey is an open source framework that supports JAX-RS, which is a simple API spec for creating REST APIs. The Jersey documentation can be seen at \url{https://jersey.github.io/}.
 	
 	To checkout the project:
@@ -20,4 +13,3 @@
 		\item To build and run the backend in Docker, refer to the chapter on Docker deployment.
 		\item To build and run the backend standalone, run \texttt{mvn build} followed by \texttt{mvn exec:java} in the root of the project, or use your IDEs built in build-and-run functionality.	
 	\end{itemize}
-\end{document}
