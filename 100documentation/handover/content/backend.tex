@@ -1,0 +1,16 @@
+\chapter{Setup Backend}
+
+The backend of FMMS consists of a REST API connected to a PostgreSQL database. The REST API is written in Java using Jersey. Jersey is an open source framework that supports JAX-RS, which is a simple API spec for creating REST APIs. The Jersey documentation can be seen at \url{https://jersey.github.io/}.
+
+To checkout the project:
+\begin{enumerate}
+	\item First install Maven if you do not have it already. \\ 
+	\url{https://maven.apache.org/install.html}
+	\item Clone the GitHub repository with \texttt{git clone git@github.com:FSG1/backend.git}
+\end{enumerate}
+
+The backend can be run in Docker or standalone from the jar.
+\begin{itemize}
+	\item To build and run the backend in Docker, refer to the chapter on Docker deployment.
+	\item To build and run the backend standalone, run \texttt{mvn build} followed by \texttt{mvn exec:java} in the root of the project, or use your IDEs built in build-and-run functionality.	
+\end{itemize}
