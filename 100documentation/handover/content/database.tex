@@ -1,0 +1,29 @@
+\chapter{Setup Database}
+\label{ch:database}
+
+The database needs an already installed version of \href{https://www.postgresql.org/}{PostgreSQL}.
+To import the database schema, first a new user and a new database have to be created.
+After that, the SQL files from the \href{https://github.com/FSG1/database/tree/master/scripts}{"scripts"} directory can be imported to the database. Please take care of the order as it is indicated by the numbers.
+
+Listing \ref{lst:database} shows how to create a user, a database and import all SQL files.
+The script is written in bash and only works in Linux systems.
+For Windows or MacOS please use a database client like \href{https://www.pgadmin.org/}{PgAdmin} or \href{https://www.jetbrains.com/datagrip/}{DataGrip}.
+
+\textbf{Please be aware that the database repository does contain only the database schema. To import the data there is a SQL file inside the subversion repository which can be imported the same way as the other files.}
+
+~\\
+\begin{minipage}{\textwidth}
+	\begin{lstlisting}[caption={Import database schema},label={lst:database}]
+	# Create user "module"
+	sudo -u postgres \
+		psql --command "CREATE USER module WITH PASSWORD 'fmms';"
+	
+	# Create database "modulemanagement"
+	createdb -O module modulemanagement
+	
+	for f in scripts/*.sql; do 
+		sudo -u postgres psql -U module -d modulemanagement -f "$f";
+	done
+	\end{lstlisting}
+\end{minipage}
+

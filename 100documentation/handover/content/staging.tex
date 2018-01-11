@@ -1,0 +1,25 @@
+\chapter{Staging Area}
+\label{ch:staging}
+
+There is a running instance of the project available at \url{https://modulemanagement.fontysvenlo.org/}.
+This instance is mainly a staging and testing instance for the customer and does not guarantee any data persistence.
+The instance is automatically built and deployed with a Jenkins CI at \url{http://fontysvenlo.org:28080}.
+~\\
+The Jenkins installation contains three projects:
+\begin{itemize}
+	\item backend
+	\item frontend
+	\item deployment
+\end{itemize}
+
+
+The backend project is responsible to build the backend code, run unit tests, code style analysis and test coverage checks and, if all checks passes, build a docker container and push the container to a local docker registry. \\
+
+The frontend project is responsible to build the frontend code, run unit tests and, if the tests run successfully, build a docker container and push the container to a local docker registry. \\
+
+The deployment project first stops the running frontend and backend containers. After that it starts the build of the frontend and backend projects. When they finished successfully the deployment project pulls the new containers from the registry and starts the frontend and backend with the new versions.
+
+The build configurations are stored in files named "Jenkinsfile". There is exactly one Jenkinsfile for each project which lives in to root of each repository.
+It uses a special Jenkins pipeline syntax written in \href{https://en.wikipedia.org/wiki/Groovy_(programming_language)}{Groovy}. \\
+\\
+\textbf{To deploy a new version of the project, the build of the deployment project needs to be started manually.}
