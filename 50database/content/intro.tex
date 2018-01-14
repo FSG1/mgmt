@@ -1,28 +1,27 @@
 % !TeX spellcheck = en_US
-\section{Overview}
+\section{Introduction}
 \label{sec:intro}
 
-This document lays out the structure and design decisions of the FMMS database.
-The database is designed to store information about study programs such as Informatics at FH TenL Venlo.
-The concrete database content is treated as sensible data and not discussed here.
-~\\
-PostgreSQL is used as database server and to make use of some features the database is divided into three different schemas. The purpose of the schemas is explained in the following subsections.
+
+\subsection{Overview}
 
 
-\subsection{Study Schema}
-The most important schema is the \glqq study\grqq{} schema. It contains all tables which store the data about the studies. The data is stored in a highly normalized data structure which allows to easily make sure the database is in a consistent state and enables to enforce some strict constraints.
 
 
-\subsection{Descriptions Schema}
-The descriptions schema contains information about published module description.
-When a module description is published, all information which is needed to generate the module description will be copied from the study schema to the description schema.
-This makes it easy to keep track of changes over time and allows user to get older versions of module descriptions.
-~\\
-The table structure of this schema is - in contrast to the study schema - optimized to store data so the module description can be generated as easy as possible. This includes some denormalization and data duplication.
-Nevertheless, it is forbidden so make any changes to the data in this schema, only insertion will be allowed, so there is no need to enforce complex constraints or keep track of data consistency.
+
+\subsection{Conventions}
+
+All database names follow a special convention which is described in this section.
 
 
-\subsection{Users Schema}
-The users schema contains all data which is needed to run the application. This includes user data as well as configuration and access control information.
-~\\
-This schema will be extended during development to add more features to the application.
+\paragraph{Table Names}
+All tables are named after the entity they represent. The name is always singular. If the table represents a many-to-many relationship, the table name contains the two tables which are connected separated by an underscores. The order of the tables is not regulated, but normally there is a natural direction inside the relationship.
+
+\paragraph{Primary Keys}
+All tables contain a column named "id" with the database type "SERIAL" which implies integer. This column is the primary key of each table. If there are business keys or natural unique combinations, they are created separately keeping "id" as the only primary key column to every table.
+
+\paragraph{Foreign Keys}
+All columns which contain a foreign key relationship are named using a special convention. They contain a regular name, which is mostly the table name they reference, followed by an underscore and then the column name of the foreign table which they reference. Therefore, all columns which contain an underscore represent a relationship to another table and hold a foreign key.
+
+\paragraph{Data Types}
+For each column the data type has been chosen which fits best to the intended data. There are two exceptions: first, all primary key columns have the data type "SERIAL" which implies an "INTEGER" (as described before), second all columns which contains character have the data type "TEXT". Because there is no performance or data storage difference in PostgreSQL database between "TEXT" and "CHARACTER VARYING" we do not need to keep track of max string length when we use "TEXT" by default.

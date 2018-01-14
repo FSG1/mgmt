@@ -1,19 +1,286 @@
 % !TeX spellcheck = en_US
 \section{Database Structure}
 
-This sections deals with the structure of each schema. 
-It lines out the most important tables and design decisions.
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & activity \\ \hline
+		\textbf{Description}          &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & architecturallayer \\ \hline
+		\textbf{Description}          &      \\ \hline
+	\end{tabular}
+\end{table}
 
-\subsection{Study Structure}
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & curriculum \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & department \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & employee \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
-\subsection{Description Structure}
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & employee\_department \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & learninggoal \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & learninggoal\_qualification \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
-\subsection{Users Structure}
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & levelofskill \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & module \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & module\_employee \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
 
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & module\_profile \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & moduleassessment \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & moduledependency \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & moduledescription \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & moduletopic \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & professionaltask \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & profile \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & profile\_qualification \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & qualification \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & studyprogramme \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\renewcommand{\arraystretch}{2}
+	\centering
+	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
+		\textbf{Schema}               & study \\ \hline
+		\textbf{Name}                 & teachingmaterial \\ \hline
+		\textbf{Description}          &      \\ \hline
+		\textbf{Connected Tables}     &      \\ \hline
+	\end{tabular}
+\end{table}
