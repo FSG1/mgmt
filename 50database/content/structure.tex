@@ -1,123 +1,127 @@
 % !TeX spellcheck = en_US
 \section{Database Structure}
 
+This section documents the individual tables and their purpose.
+The table names aren't always enough to understand the purpose of the table.
+Also this sections provides important information about relationships between tables and specific constraints.
+
+\newcommand{\tableref}[1]{\hyperref[table:#1]{#1}}
+
+\renewcommand{\arraystretch}{2}
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:activity}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & activity \\ \hline
-		\textbf{Description}          &      \\ \hline
+		\textbf{Description}          & This table contains all activities as they are defined in the HBO-I qualifications document. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:architecturallayer}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & architecturallayer \\ \hline
-		\textbf{Description}          &      \\ \hline
+		\textbf{Description}          & This table contains all architectural layers as they are defined in the HBO-I qualifications document. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:curriculum}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & curriculum \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains different curricula. Curricula are a set of modules which belongs to a specific study program. Basically, curricula represent a version of a study program which can change over time. A curriculum has a curriculum owner and belongs to a specific department. \\ \hline
+		\textbf{Connected Tables}     & \tableref{employee}, \tableref{department} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:department}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & department \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contain the different departments which manage their modules inside the system. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:employee}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & employee \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the employee, meaning the lecturers of the departments. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:employee_department}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & employee\_department \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table connects employee with certain departments. In theory, an employee can work for multiple departments. \\ \hline
+		\textbf{Connected Tables}     & \tableref{employee}, \tableref{department} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:learninggoal}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & learninggoal \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains all learning goals. Learning goals consists of a sequence number, a weight and a description. Every learning goal is connected to exactly one module. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:learninggoal_qualification}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & learninggoal\_qualification \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table connects learning goals with concrete qualifications. A learning goal can be connected with multiple qualifications. These connections shows how the learning goal contributes the to students skills. \\ \hline
+		\textbf{Connected Tables}     & \tableref{learninggoal}, \tableref{qualification} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:levelofskill}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & levelofskill \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the different level of skills which can be reached during study. A skill is always a combination of an activity and an architectural layer. The possible levels of skills are defined in the HBO-I document. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:module}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
@@ -130,20 +134,20 @@
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:module_employee}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & module\_employee \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the many-to-many relationship between modules and employees. A module can be taught by multiple employees (and usually is), and an employee can teach multiple modules. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module}, \tableref{employee} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:module_profile}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
@@ -151,136 +155,135 @@
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & module\_profile \\ \hline
 		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Connected Tables}     & \tableref{module}, \tableref{profile} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:moduleassessment}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & moduleassessment \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains information about exams and assessments. Each instance has a globally unique assessment code which can also be found in Progress. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:moduledependency}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & moduledependency \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table represents dependencies between modules. There are three types of dependencies: PRIOR, CONCURRENT and MANDATORY. Prior module are modules which are logically before the actual module. Concurrent modules are taught in the same semester and share some topics. Mandatory modules have to be passed before you can start with the current module. This table allows to generate a flow chart which displays the dependencies inside a study program. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:moduledescription}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & moduledescription \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains information displayed in module descriptions. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:moduletopic}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & moduletopic \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the topics for each module. Topics only consists of a simple description and a sequence number. The sequence number is automatically generated and is unique in combination with the module id. \\ \hline
+		\textbf{Connected Tables}     & \tableref{module} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:professionaltask}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & professionaltask \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the description of the task a student has to fulfill when to reach a certain qualification. The tasks are defined in the HBO-I document. \\ \hline
+		\textbf{Connected Tables}     &  \tableref{qualification} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:profile}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & profile \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table connects a study program with a specific curriculum. A curriculum can belong to multiple study programs. Also a study program can have multiple curricula, but for each point in time only one curriculum can be valid. Therefore this connections can be seen as a kind of curriculum versioning. \\ \hline
+		\textbf{Connected Tables}     & \tableref{curriculum}, \tableref{studyprogramme} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:profile_qualification}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & profile\_qualification \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table connects profile with qualifications. The connections show the end qualifications of after a specific study program. \textbf{This table is unused at the moment.} \\ \hline
+		\textbf{Connected Tables}     & \tableref{profile}, \tableref{qualification} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:qualification}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
-		\textbf{Schema}               & study \\ \hline
+		\textbf{Schema\newcolumntype{name}{argument}}               & study \\ \hline
 		\textbf{Name}                 & qualification \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains all permutations of all reachable skills. A qualification is the combination of an activity, an architectural layer and a certain skill level as defined in "levelofskill". \\ \hline
+		\textbf{Connected Tables}     & \tableref{activity}, \tableref{architecturallayer}, \tableref{levelofskill} \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:studyprogramme}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & studyprogramme \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the general information about a study programme, for example software engineering or business informatics. \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}[H]
-	\renewcommand{\arraystretch}{2}
+	\label{table:teachingmaterial}
 	\centering
 	\begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 		\hline
 		\multicolumn{2}{|c|}{\textbf{Table}} \\ \hline
 		\textbf{Schema}               & study \\ \hline
 		\textbf{Name}                 & teachingmaterial \\ \hline
-		\textbf{Description}          &      \\ \hline
-		\textbf{Connected Tables}     &      \\ \hline
+		\textbf{Description}          & This table contains the information about teaching materials. There are different types of teaching materials: books, websites, article and others. The type is stored to allow the export of a book list for each module. The table is connected to module descriptions. \\ \hline
+		\textbf{Connected Tables}     & \tableref{moduledescription} \\ \hline
 	\end{tabular}
 \end{table}
