@@ -13,27 +13,3 @@
 \author{\Authors \\ \\ \\ \Institute\\ \Course}
 \date{Venlo, \today}
 
-
-\newenvironment{constraint}[1]{
-	\newcommand{\Header}[1]{\textbf{##1}}
-	\newcommand{\Row}[2]{\Header{##1} & ##2 \\ \hline}
-	
-	\newcommand{\Schema}[1]{\Row{Schema}{##1}}
-	\newcommand{\Table}[1]{\Row{Table}{##1}}
-	\newcommand{\Column}[1]{\Row{Column}{##1}}
-	
-	\newcommand{\Description}[1]{\Row{Description}{##1}}
-	
-	
-	\newcommand{\NotNull}[1]{\Row{Schema}{##1}}
-	
-	\begin{table}[H]
-		\centering
-		\label{constraint:#1}
-		\begin{tabular}{|p{0.3\textwidth}|p{0.7\textwidth}|}
-			\hline
-}{
-		\end{tabular}
-		\caption{#1}
-	\end{table}
-}
