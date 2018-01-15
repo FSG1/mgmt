@@ -16,6 +16,7 @@
 		\hline
 	}
 	
+	\centering
 	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{1.5cm}#1\end{minipage}% 
 		&\begin{minipage}[t][][t]{8cm}
 			\begin{enumerate} #2   \end{enumerate}
@@ -25,7 +26,7 @@
 	{\hline\end{tabular}}
 
 
-\author{Sjoerd Brauer}
+\author{Loek Ehren}
 \title{\textbf{User stories}}
 \date{11-9-2017}
 
@@ -34,123 +35,290 @@
 \begin{document}
     \maketitle
 
-    \input{US_003}
+    \begin{usecase}
+    	\addrow{Name}{View learning goals}
+    	\hline
+    	\addrow{ID}{US\_001}
+    	\hline
+    	\addrow{Actors}{ Teacher }
+    	\hline		
+    	\addrow{Story}{I want to see the learning goals of a module.}
+    	\hline
+    	\addrow{Completed in}{Sprint 1}
+    \end{usecase}
     
     ~\\
     ~\\
     
-    \input{US_004}
+    \begin{usecase}
+    	\addrow{Name}{View module information}
+    	\hline
+    	\addrow{ID}{US\_002}
+    	\hline
+    	\addrow{Actors}{ Teacher }
+    	\hline		
+    	\addrow{Story}{I want to see all the information of a module.}
+    	    	\hline
+    	\addrow{Completed in}{Sprint 1}
+    \end{usecase}
     
     ~\\
+    ~\\
+    
+    \begin{usecase}
+	\addrow{Name}{Filter on curricula}
+	\hline
+	\addrow{ID}{US\_003}
+	\hline
+	\addrow{Actors}{ Teacher }
+	\hline		
+	\addrow{Story}{I want to filter modules on their curricula.}
+	\hline
+	\addrow{Completed in}{Sprint 2}
+	\end{usecase}
+
 	~\\
-  
-    
-    \input{US_006}
-    
-    ~\\
-    ~\\
-    
-    \input{US_007}
-    
-    ~\\
-    ~\\
-    
-    \input{US_008}
-    
-    ~\\
-    ~\\
-    
-    \input{US_009}
-
-    ~\\
 	~\\
-    
-
-    \input{US_011}
-    
-    ~\\
+	
+	    \begin{usecase}
+		\addrow{Name}{See all modules of curriculum}
+		\hline
+		\addrow{ID}{US\_004}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to see all modules of a curriculum.}
+		\hline
+		\addrow{Completed in}{Sprint 2}
+	\end{usecase}
+	
 	~\\
-    
-    \input{US_012}
-    
-    ~\\
-    ~\\
-    
-    \input{US_013}
-    
-    ~\\
-    ~\\
-    
-    \input{US_014}
-    
-    ~\\
-    ~\\
-    
-    \input{US_015}
-    
-    ~\\
-    ~\\
-    
-    \input{US_016}
-    
-    ~\\
-    ~\\
-    
-    \input{US_017}
-    
-    ~\\
-    ~\\
-    
-    \input{US_018}
-    
-    ~\\
-    ~\\
-    
-    \input{US_019}
-    
-    ~\\
-    ~\\
-    
-    \input{US_020}
-    
-    ~\\
-    ~\\
-    
-    \input{US_021}
-  
-    ~\\
-    ~\\
-    
-    \input{US_022}
-    
-    ~\\
-    ~\\
-    
-    \input{US_023}
-    
-    ~\\
-    ~\\
-    
-    \input{US_024}
-    
-    ~\\
-    ~\\
-    
-    \input{US_025}
-    
-    ~\\
-    ~\\
-    
-    \input{US_026}
-    
-    ~\\
-    ~\\
-    
-    \input{US_027}
-    
+~\\
 
-    
+\begin{usecase}
+	\addrow{Name}{Filter on qualifications}
+	\hline
+	\addrow{ID}{US\_011}
+	\hline
+	\addrow{Actors}{ Teacher }
+	\hline		
+	\addrow{Story}{I want to filter modules on their competences.}
+	\hline
+	\addrow{Completed in}{Sprint 2}
+\end{usecase}
 
+ ~\\
+ ~\\
+ 
+ 	    \begin{usecase}
+ 	\addrow{Name}{View curriculum full name}
+ 	\hline
+ 	\addrow{ID}{US\_012}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I want to see the full name of a curriculum.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ \begin{usecase}
+ 	\addrow{Name}{View module full name}
+ 	\hline
+ 	\addrow{ID}{US\_013}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I want to see the real module name in the module overview.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ 
+ \begin{usecase}
+ 	\addrow{Name}{View semester information}
+ 	\hline
+ 	\addrow{ID}{US\_014}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I want to see all information of a semester.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ \begin{usecase}
+ 	\addrow{Name}{Order projects}
+ 	\hline
+ 	\addrow{ID}{US\_015}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I want to see projects ordered to the end of the Semester.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ \begin{usecase}
+ 	\addrow{Name}{Continuous deployment}
+ 	\hline
+ 	\addrow{ID}{US\_016}
+ 	\hline
+ 	\addrow{Actors}{ Customer }
+ 	\hline		
+ 	\addrow{Story}{I want an up to date app running.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ \begin{usecase}
+ 	\addrow{Name}{Multi line text support}
+ 	\hline
+ 	\addrow{ID}{US\_017}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I want to see multi line text for introduction.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+ 
+ ~\\
+ ~\\
+ 
+ \begin{usecase}
+ 	\addrow{Name}{Hide empty fields}
+ 	\hline
+ 	\addrow{ID}{US\_018}
+ 	\hline
+ 	\addrow{Actors}{ Teacher }
+ 	\hline		
+ 	\addrow{Story}{I don't want to see empty fields of a module description.}
+ 	\hline
+ 	\addrow{Completed in}{Sprint 2}
+ \end{usecase}
+
+~\\
+~\\
+	
+		    \begin{usecase}
+		\addrow{Name}{Save and edit basic information}
+		\hline
+		\addrow{ID}{US\_009}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to edit and save basic plain text information of a module.}
+		\hline
+		\addrow{Completed in}{Sprint 3}
+	\end{usecase}
+	
+	~\\
+	~\\
+	
+	\begin{usecase}
+		\addrow{Name}{See teaching materials}
+		\hline
+		\addrow{ID}{US\_010}
+		\hline
+		\addrow{Actors}{ Teacher}
+		\hline		
+		\addrow{Story}{I want to see the teaching materials of a module.}
+		\hline
+		\addrow{Completed in}{Sprint 3}
+	\end{usecase}
+	
+	~\\
+	~\\
+	
+	\begin{usecase}
+		\addrow{Name}{View grading information}
+		\hline
+		\addrow{ID}{US\_019}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to see a module's grading and assessment information.}
+		\hline
+		\addrow{Completed in}{Sprint 3}
+	\end{usecase}
+
+~\\
+~\\
+	
+	    \begin{usecase}
+		\addrow{Name}{Edit prior knowledge}
+		\hline
+		\addrow{ID}{US\_006}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to edit and save a module's linked modules.}
+		\hline
+		\addrow{Completed in}{Sprint 4}
+	\end{usecase}
+	
+	~\\
+	~\\
+	
+	    \begin{usecase}
+		\addrow{Name}{Edit and save grading information}
+		\hline
+		\addrow{ID}{US\_007}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to edit and save a module's grading information}
+		\hline
+		\addrow{Completed in}{Sprint 4}
+	\end{usecase}
+	
+	~\\
+	~\\
+	
+	    \begin{usecase}
+		\addrow{Name}{Edit and save learning goals}
+		\hline
+		\addrow{ID}{US\_008}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{I want to edit and save a module's learning goals.}
+		\hline
+		\addrow{Completed in}{Sprint 4}
+	\end{usecase}
+
+	
+	~\\
+	~\\
+	
+		    \begin{usecase}
+		\addrow{Name}{Generate PDF}
+		\hline
+		\addrow{ID}{US\_005}
+		\hline
+		\addrow{Actors}{ Teacher }
+		\hline		
+		\addrow{Story}{As teacher I want to generate a PDF of a module's description.}
+		\hline
+		\addrow{Completed in}{Sprint 5}
+	\end{usecase}
+	
     
 
 \end{document}
